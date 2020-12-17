@@ -13,7 +13,6 @@ class SelectTags extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-
   handleClick(e) {
     this.setState({
       data: e.target.dataset.value
@@ -42,7 +41,6 @@ class SelectTags extends React.Component {
               {this.state.data === 'Activity' ? <u>{`Activity`}</u> : `Activity`}
             </div>
           </div>
-
         </div>
       </div>
     )
