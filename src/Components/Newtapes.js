@@ -6,7 +6,7 @@ import NoteBox from '../Subcomponents/NoteBox';
 import CreateTagInfo from '../Subcomponents/CreateTagInfo';
 import TextPic from '../Subcomponents/TextPic';
 
-function CreateTags () {
+function Newtapes () {
   return (
     <div>
       <div id='viewscreen'>
@@ -23,4 +23,4 @@ function CreateTags () {
   );
 }
 
-export default CreateTags;
+export default Newtapes;

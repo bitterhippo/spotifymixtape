@@ -2,19 +2,9 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 //Presentational Components
-import Nav from './Components/Nav';
-import FooterNav from './Components/FooterNav'
-import Genre from './Components/Genre';
-import Mood from './Components/Mood';
-import Activity from './Components/Activity';
-import Occasion from './Components/Occasion';
-import Library from './Components/Library';
-import Home from './Components/Home';
-import Search from './Components/Search';
 import Viewscreen from './Subcomponents/Viewscreen';
-import CreateTags from './Components/Createtags';
-import SearchTags from './Components/SearchTags';
-
+import Newtapes from './Components/Newtapes';
+import SelectTags from './Components/SelectTags';
 
 class App extends React.Component {
   constructor() {
@@ -51,15 +41,10 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
-            <Route path='/Genre' component={() => <Genre props={this.onClick} />} />
-            <Route path='/Createtags' exact component={CreateTags} />
-            <Route path='/SearchTags' exact component={SearchTags} />
-            <Route path='/Occasion' exact component={Occasion} />
-            <Route path='/Home' component={() => <Home props={this.onClick} />} />
-            <Route path='/Search' exact component={Search} />
-            <Route path='/Library' exact component={Library} />
-            <Viewscreen />
+            <Route path='/Newtapes' exact component={Newtapes} />
+            <Route path='/SelectTags' exact component={SelectTags} />
           </Switch>
+          <Viewscreen />
         </div>
       </Router>
     )
