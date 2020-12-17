@@ -2,37 +2,97 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+  background: gray;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#viewscreen{
+  position: relative;
+  height: 900px;
+  width: 375px;
+  background-image: radial-gradient(farthest-corner at 40px 40px,
+  rgb(45, 35, 68) 0%, rgb(1, 0, 10) 100%);
+  color: white;
 }
+
+#statusbar{
+  position: absolute;
+  top: 0;
+}
+
+#mixtapes {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 20%;
+  background-color: gray;
+}
+
+#newmixtapes {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 20%;
+  background-color: green;
+}
+
+#recentlyplayed {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 20%;
+  background-color: pink;
+}
+
+#footer {
+  margin-top: 90px;
+  height: 5%;
+  width: 375px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+}
+
+#notebox {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 35px;
+  width: 80%;
+  height: 30%;
+  background-color: green;
+}
+
+#createtag-info {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 35px;
+  width: 80%;
+  height: 20%;
+  background-color: red;
+  text-align: center;
+}
+
+#createtag-imgs {
+  position: absolute;
+  display: inline-flex;
+  margin-top: 600px;
+  margin-left: 45px;
+  gap: 25px;
+}
+
