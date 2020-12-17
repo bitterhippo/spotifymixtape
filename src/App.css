@@ -96,3 +96,8 @@ nav {
   gap: 25px;
 }
 
+#selector-box {
+  display: inline-flex;
+  gap: 10px;
+}
+

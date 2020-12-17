@@ -43,8 +43,8 @@ class App extends React.Component {
           <Switch>
             <Route path='/Newtapes' exact component={Newtapes} />
             <Route path='/SelectTags' exact component={SelectTags} />
+            <Viewscreen />
           </Switch>
-          <Viewscreen />
         </div>
       </Router>
     )
