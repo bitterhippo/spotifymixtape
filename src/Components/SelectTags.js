@@ -44,9 +44,13 @@ class SelectTags extends React.Component {
               {this.state.data === 'Activity' ? <u>{`Activity`}</u> : `Activity`}
             </div>
           </div>
-          {/* This is the programatic rendering box */}
-          <div>
+          {/* This is the programatic rendering box 
+            
             {DB[this.state.data][0].name}
+          
+          */}
+          <div id="selector-container">
+            {DB[this.state.data].map((current, int) => <div>{current.name}<img src={current.img} height="100px" width="100px"></img></div>)}
           </div>
         </div>
       </div>
