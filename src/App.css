@@ -19,6 +19,19 @@ nav {
   list-style: none;
 }
 
+.box-text{
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 80px;
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+
+.img-tile{
+  margin-bottom: 0px;
+}
+
 #viewscreen{
   position: relative;
   height: 900px;
@@ -102,6 +115,8 @@ nav {
 }
 
 #selector-container {
+  position: relative;
+  text-align: center;
   display: grid;
   grid-template-columns: auto auto;
   background-color: #2196F3;

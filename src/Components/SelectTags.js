@@ -23,7 +23,7 @@ class SelectTags extends React.Component {
 
   render() {
     //Current Test Block
-  
+
     return (
       <div>
         <div id='viewscreen'>
@@ -47,10 +47,15 @@ class SelectTags extends React.Component {
           {/* This is the programatic rendering box 
             
             {DB[this.state.data][0].name}
+
+             <img src={current.img} height="100px" width="100px" />
           
           */}
           <div id="selector-container">
-            {DB[this.state.data].map((current, int) => <div>{current.name}<img src={current.img} height="100px" width="100px"></img></div>)}
+            {DB[this.state.data].map((current, int) => <div key={int}>
+              <div className="box-text" style={{backgroundImage: `${current.img}`}}>{current.name}</div>
+              <img className="img-tile"src={current.img} height="100px" width="100px" />
+            </div>)}
           </div>
         </div>
       </div>

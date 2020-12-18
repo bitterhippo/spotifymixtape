@@ -7,7 +7,7 @@ const Data = {
     },
     {
       name: `Country`,
-      img: `Country.jpg`,
+      img: `Country.jpeg`,
       tags: ``
     },
     {
@@ -17,7 +17,7 @@ const Data = {
     },
     {
       name: `Classical`,
-      img: `Classical.jpg`,
+      img: `Classical.jpeg`,
       tags: ``
     },
     {
