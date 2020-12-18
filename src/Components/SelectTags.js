@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import StatusBar from '../Subcomponents/Footer';
 import Footer from '../Subcomponents/StatusBar';
+import DB from '../DB';
 
 
 class SelectTags extends React.Component {
@@ -21,6 +22,8 @@ class SelectTags extends React.Component {
   }
 
   render() {
+    //Current Test Block
+  
     return (
       <div>
         <div id='viewscreen'>
@@ -40,6 +43,10 @@ class SelectTags extends React.Component {
             <div data-value="Activity" onClick={this.handleClick}>
               {this.state.data === 'Activity' ? <u>{`Activity`}</u> : `Activity`}
             </div>
+          </div>
+          {/* This is the programatic rendering box */}
+          <div>
+            {DB[this.state.data][0].name}
           </div>
         </div>
       </div>
