@@ -19,15 +19,6 @@ nav {
   list-style: none;
 }
 
-.box-text{
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 80px;
-  height: 100px;
-  width: 100px;
-  color: white;
-}
-
 .img-tile{
   margin-bottom: 0px;
 }

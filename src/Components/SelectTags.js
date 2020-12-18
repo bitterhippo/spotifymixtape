@@ -8,15 +8,23 @@ import DB from '../DB';
 class SelectTags extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: "Genre" }
+    this.state = { data: "Genre", selected : "" }
 
 
     this.handleClick = this.handleClick.bind(this);
+    this.getElement = this.getElement.bind(this);
   }
 
   handleClick(e) {
     this.setState({
       data: e.target.dataset.value
+    })
+  }
+
+  getElement(e) {
+    console.log(e.target.dataset.value)
+    this.setState({
+      selected: e.target.dataset.value
     })
     console.log(this.state)
   }
@@ -29,7 +37,7 @@ class SelectTags extends React.Component {
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
-          <h3>Tags :</h3>
+          <h3>Tags : {this.state.selected}</h3>
           <div id="selector-box">
             <div data-value='Genre' onClick={this.handleClick}>
               {this.state.data === 'Genre' ? <u>{`Genre`}</u> : `Genre`}
@@ -53,8 +61,8 @@ class SelectTags extends React.Component {
           */}
           <div id="selector-container">
             {DB[this.state.data].map((current, int) => <div key={int}>
-              <div className="box-text" style={{backgroundImage: `${current.img}`}}>{current.name}</div>
-              <img className="img-tile"src={current.img} height="100px" width="100px" />
+              <div className="box-text">{current.name}</div>
+              <img onClick={this.getElement} data-value={current.name} className="img-tile" src={current.img} height="100px" width="100px" />
             </div>)}
           </div>
         </div>
