@@ -8,7 +8,7 @@ import DB from '../DB';
 class SelectTags extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: "Genre", selected : "" }
+    this.state = { data: "Genre", selected: [] }
 
 
     this.handleClick = this.handleClick.bind(this);
@@ -23,10 +23,16 @@ class SelectTags extends React.Component {
 
   getElement(e) {
     console.log(e.target.dataset.value)
-    this.setState({
-      selected: e.target.dataset.value
-    })
-    console.log(this.state)
+    if (this.state.selected.includes(e.target.dataset.value)) {
+      this.setState({
+        selected: [...this.state.selected.filter(x => x !== e.target.dataset.value)]
+      })
+    } else {
+      this.setState({
+        selected: [...this.state.selected, e.target.dataset.value]
+      })
+      console.log(this.state)
+    }
   }
 
   render() {
@@ -37,7 +43,7 @@ class SelectTags extends React.Component {
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
-          <h3>Tags : {this.state.selected}</h3>
+          <h3>Tags : {this.state.selected.join('  ')}</h3>
           <div id="selector-box">
             <div data-value='Genre' onClick={this.handleClick}>
               {this.state.data === 'Genre' ? <u>{`Genre`}</u> : `Genre`}
