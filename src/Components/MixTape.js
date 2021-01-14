@@ -20,9 +20,8 @@ class MixTape extends React.Component {
       <div>
         <div id='viewscreen'>
           <StatusBar />
-          <NoteBox />
           <Footer />
-          <SongBox props={{ img: 'Funk.jpeg'}}/>
+          <SongBox props={'Funk.jpeg'}/>
         </div>
       </div>
     );
