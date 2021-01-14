@@ -71,6 +71,9 @@ class SelectTags extends React.Component {
               <img onClick={this.getElement} data-value={current.name} className="img-tile" src={current.img} height="100px" width="100px" />
             </div>)}
           </div>
+          <div>
+            Track Counter Placeholder
+          </div>
         </div>
       </div>
     )
