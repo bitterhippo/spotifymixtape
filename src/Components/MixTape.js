@@ -5,17 +5,28 @@ import Footer from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import CreateTagInfo from '../Subcomponents/CreateTagInfo';
 import TextPic from '../Subcomponents/TextPic';
+import SongBox from '../Subcomponents/SongBox';
 
-function MixTape () {
-  return (
-    <div>
-      <div id='viewscreen'>
-        <StatusBar />
-        <NoteBox/>
-        <Footer />
+
+class MixTape extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { }
+  }
+
+
+  render () {
+    return (
+      <div>
+        <div id='viewscreen'>
+          <StatusBar />
+          <NoteBox />
+          <Footer />
+          <SongBox props={{ img: 'Funk.jpeg'}}/>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default MixTape;
