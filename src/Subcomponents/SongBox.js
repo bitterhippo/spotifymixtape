@@ -8,10 +8,11 @@ const SongBox = props => {
   return (
     <div style={styles.row}>
       <div>
-        <img src="Funk.jpeg" style={styles.img}/>
+        <img src={props.props.img} style={styles.img}/>
       </div>
-      <div>
-        <span>LOL</span>
+      <div style={styles.text}>
+        <span style={styles.songName}>Song: {props.props.songName} <br></br></span>
+        <span style={styles.artist}>By: {props.props.artist}</span>
       </div>
     </div>
   )
@@ -26,12 +27,17 @@ const styles = {
     width: 75
   },
   text: {
-    color: 'green',
-    margin: '10px',
-    padding: '10px'
+    height: 75,
+    width: 200,
+    justifyContent: 'center',
+    textAlign: 'center'
   },
-  icons: {
-
+  songName: {
+    fontSize: 18
+  },
+  artist: {
+    fontSize: 12,
+    color: 'grey'
   }
 }
 
