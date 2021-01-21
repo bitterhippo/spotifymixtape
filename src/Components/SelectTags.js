@@ -4,6 +4,7 @@ import StatusBar from '../Subcomponents/Footer';
 import Footer from '../Subcomponents/StatusBar';
 import DB from '../DB';
 import TextPic from '../Subcomponents/TextPic';
+import Tagged from '../Subcomponents/Tagged';
 
 
 class SelectTags extends React.Component {
@@ -47,7 +48,7 @@ class SelectTags extends React.Component {
           <Footer />
           <h3>Tags : </h3>
           <div style={{flexDirection: 'row'}}>
-            <div>{this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <div key={y}>{x}</div>
+            <div>{this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]}/>
             ))}</div>
           </div>
           <div id="selector-box">
