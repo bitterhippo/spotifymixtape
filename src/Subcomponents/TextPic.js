@@ -5,7 +5,7 @@ function TextPic(props) {
   console.log(props)
   return (
     <div style={styles.container}>
-      <img src={ props.props[0] } style={styles.img}/>
+      <img onClick={props.onClick} data-value={props.props[1]} src={ props.props[0] } style={styles.img}/>
       <div style={styles.text}>{ props.props[1] }</div>
     </div>
   )
@@ -15,8 +15,8 @@ const styles = {
   container: {
     position: "relative",
     color: "white",
-    height: 125,
-    width: 125
+    height: 100,
+    width: 100
   },
   img : {
     position: "absolute",

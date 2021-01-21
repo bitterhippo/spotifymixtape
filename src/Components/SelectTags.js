@@ -3,6 +3,7 @@ import '../App.css';
 import StatusBar from '../Subcomponents/Footer';
 import Footer from '../Subcomponents/StatusBar';
 import DB from '../DB';
+import TextPic from '../Subcomponents/TextPic';
 
 
 class SelectTags extends React.Component {
@@ -60,15 +61,13 @@ class SelectTags extends React.Component {
           </div>
           {/* This is the programatic rendering box 
             
-            {DB[this.state.data][0].name}
-
-             <img src={current.img} height="100px" width="100px" />
-          
+            <div className="box-text">{current.name}</div>
+              <img onClick={this.getElement} data-value={current.name} className="img-tile" src={current.img} height="100px" width="100px" />
+            
           */}
           <div id="selector-container">
             {DB[this.state.data].map((current, int) => <div key={int}>
-              <div className="box-text">{current.name}</div>
-              <img onClick={this.getElement} data-value={current.name} className="img-tile" src={current.img} height="100px" width="100px" />
+              <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`,`${current.name}`]} />
             </div>)}
           </div>
           <div id="track-Counter">
