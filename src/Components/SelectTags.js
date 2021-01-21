@@ -47,9 +47,9 @@ class SelectTags extends React.Component {
           <StatusBar />
           <Footer />
           <h3>Tags : </h3>
-          <div style={{flexDirection: 'row'}}>
-            <div>{this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]}/>
-            ))}</div>
+          <div style={styles.tagged}>
+            {this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]}/>
+            ))}
           </div>
           <div id="selector-box">
             {boxNames.map((x, y) => <div
@@ -78,4 +78,14 @@ class SelectTags extends React.Component {
     )
   };
 }
+
+const styles = {
+  tagged : {
+    alignContent: "center",
+    display: "inline-flex",
+    flexWrap: "center",
+    gap: "10px"
+  }
+}
+
 export default SelectTags;

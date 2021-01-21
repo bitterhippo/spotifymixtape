@@ -11,13 +11,14 @@ const Tagged = props => {
 const styles = {
   container : {
     width: '75px',
-    textAlign: "center"
+    textAlign: "center",
+    marginLeft: '100'
   },
   text :{
     color: 'white',
     backgroundColor: 'green',
     borderRadius: '25px',
-    width: "100%"
+    width: "100%",
   }
 }
 
