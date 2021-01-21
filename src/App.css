@@ -96,8 +96,8 @@ nav {
   position: absolute;
   display: inline-flex;
   margin-top: 600px;
-  margin-left: 45px;
-  gap: 25px;
+  margin-left: 35px;
+  gap: 50px;
 }
 
 #selector-box {
