@@ -23,7 +23,6 @@ class SelectTags extends React.Component {
   }
 
   getElement(e) {
-    console.log(e.target.dataset.value)
     if (this.state.selected.includes(e.target.dataset.value)) {
       this.setState({
         selected: [...this.state.selected.filter(x => x !== e.target.dataset.value)]
@@ -39,25 +38,25 @@ class SelectTags extends React.Component {
   render() {
     //Current Test Block
 
+    const boxNames = ['Genre', 'Mood', 'Occasion', 'Activity'];
+
     return (
       <div>
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
-          <h3>Tags : {this.state.selected.join('  ')}</h3>
+          <h3>Tags : </h3>
+          <div style={{flexDirection: 'row'}}>
+            <div>{this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <div key={y}>{x}</div>
+            ))}</div>
+          </div>
           <div id="selector-box">
-            <div data-value='Genre' onClick={this.handleClick}>
-              {this.state.data === 'Genre' ? <u>{`Genre`}</u> : `Genre`}
-            </div>
-            <div data-value="Mood" onClick={this.handleClick}>
-              {this.state.data === 'Mood' ? <u>{`Mood`}</u> : `Mood`}
-            </div>
-            <div data-value="Occasion" onClick={this.handleClick}>
-              {this.state.data === 'Occasion' ? <u>{`Occasion`}</u> : `Occasion`}
-            </div>
-            <div data-value="Activity" onClick={this.handleClick}>
-              {this.state.data === 'Activity' ? <u>{`Activity`}</u> : `Activity`}
-            </div>
+            {boxNames.map((x, y) => <div
+              data-value={x}
+              onClick={this.handleClick}
+              key={y}>
+              {this.state.data === `${x}` ? <u>{`${x}`}</u> : `${x}`}
+            </div>)}
           </div>
           {/* This is the programatic rendering box 
             
@@ -67,7 +66,7 @@ class SelectTags extends React.Component {
           */}
           <div id="selector-container">
             {DB[this.state.data].map((current, int) => <div key={int}>
-              <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`,`${current.name}`]} />
+              <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`, `${current.name}`]} />
             </div>)}
           </div>
           <div id="track-Counter">

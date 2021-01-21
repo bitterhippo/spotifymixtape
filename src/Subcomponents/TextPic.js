@@ -2,11 +2,10 @@ import React from 'react';
 import '../App.css';
 
 function TextPic(props) {
-  console.log(props)
   return (
     <div style={styles.container}>
-      <img onClick={props.onClick} data-value={props.props[1]} src={ props.props[0] } style={styles.img}/>
-      <div style={styles.text}>{ props.props[1] }</div>
+      <img alt="test" onClick={props.onClick} data-value={props.props[1]} src={props.props[0]} style={styles.img} />
+      <p style={styles.text}>{props.props[1]}</p>
     </div>
   )
 }
@@ -14,21 +13,20 @@ function TextPic(props) {
 const styles = {
   container: {
     position: "relative",
-    color: "white",
     height: 100,
     width: 100
   },
-  img : {
+  img: {
     position: "absolute",
     height: "100%",
     width: "100%",
   },
-  text : {
-    fontSize: 30,
-    top: "40%",
-    left: "40%",
+  text: {
+    fontSize: 20,
     position: "absolute",
-    color: 'white'
+    color: 'white',
+    top: "35%",
+    left: "80%"
   }
 }
 

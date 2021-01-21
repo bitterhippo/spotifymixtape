@@ -8,7 +8,7 @@ const SongBox = props => {
   return (
     <div style={styles.row}>
       <div>
-        <img src={props.props.img} style={styles.img}/>
+        <img alt="" src={props.props.img} style={styles.img}/>
       </div>
       <div style={styles.text}>
         <span style={styles.songName}>Song: {props.props.songName} <br></br></span>
