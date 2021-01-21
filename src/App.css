@@ -25,7 +25,7 @@ nav {
 
 #viewscreen{
   position: relative;
-  height: 900px;
+  height: 700px;
   width: 375px;
   background-image: radial-gradient(farthest-corner at 40px 40px,
   rgb(45, 35, 68) 0%, rgb(1, 0, 10) 100%);
@@ -98,11 +98,6 @@ nav {
   margin-top: 600px;
   margin-left: 35px;
   gap: 50px;
-}
-
-#selector-box {
-  display: inline-flex;
-  gap: 10px;
 }
 
 #selector-container {

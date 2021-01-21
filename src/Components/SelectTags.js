@@ -46,12 +46,13 @@ class SelectTags extends React.Component {
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
+          <h2 style={{textAlign: "center"}}>Select Tags</h2>
           <h3>Tags : </h3>
           <div style={styles.tagged}>
-            {this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]}/>
+            {this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]} />
             ))}
           </div>
-          <div id="selector-box">
+          <div style={styles.selectorBox}>
             {boxNames.map((x, y) => <div
               data-value={x}
               onClick={this.handleClick}
@@ -70,8 +71,10 @@ class SelectTags extends React.Component {
               <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`, `${current.name}`]} />
             </div>)}
           </div>
-          <div id="track-Counter">
-            Track Counter Placeholder
+          <div style={styles.counter}>
+            <div style={styles.counterContainer}>
+              {Math.floor(Math.random() * Math.floor(67))} Tracks
+            </div>
           </div>
         </div>
       </div>
@@ -80,11 +83,32 @@ class SelectTags extends React.Component {
 }
 
 const styles = {
-  tagged : {
-    alignContent: "center",
+  tagged: {
     display: "inline-flex",
     flexWrap: "center",
-    gap: "10px"
+    gap: "10px",
+    marginBottom: 25,
+    position: "absolute"
+  },
+  counter: {
+    textAlign: "center",
+    marginTop: 50,
+    display: "flex",
+    justifyContent: "center"
+  },
+  counterContainer: {
+    backgroundColor: "green",
+    borderRadius: '25px',
+    padding: 10,
+    width: 150
+  },
+  selectorBox: {
+    display: "inline-flex",
+    textAlign: "center",
+    gap: 20,
+    marginLeft: "18%",
+    marginBottom: 20,
+    marginTop: 55
   }
 }
 
