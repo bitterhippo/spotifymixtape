@@ -1,25 +1,25 @@
 import React from 'react';
 
-const Tagged = props => {
+const Untagged = props => {
   return (
     <div style={styles.container}>
-      <p style={styles.text}>{props.props[0]}</p>
+      <p style={styles.text}>Add New Tags</p>
     </div>
   )
 }
 
 const styles = {
   container : {
-    width: '75px',
+    width: '100px',
     textAlign: "center",
     marginLeft: '100'
   },
-  text :{
-    color: 'green',
+  text : {
+    color: 'grey',
     borderStyle: "solid",
     borderRadius: '25px',
     width: "100%",
   }
 }
 
-export default Tagged;
+export default Untagged;

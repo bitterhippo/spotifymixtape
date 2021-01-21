@@ -12,10 +12,13 @@ function TextPic(props) {
 
 const styles = {
   container: {
+    display: "flex",
     position: "relative",
-    textAlign: "center",
+    justifyContent: "center",
     height: 100,
-    width: 100
+    width: 100,
+    borderStyle: "solid",
+    borderColor: "black"
   },
   img: {
     position: "absolute",
@@ -26,8 +29,8 @@ const styles = {
     fontSize: 20,
     position: "absolute",
     color: 'white',
-    top: "35%",
-    left: "80%"
+    top: "40%",
+    fontWeight: "bold"
   }
 }
 

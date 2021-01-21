@@ -5,6 +5,7 @@ import Footer from '../Subcomponents/StatusBar';
 import DB from '../DB';
 import TextPic from '../Subcomponents/TextPic';
 import Tagged from '../Subcomponents/Tagged';
+import Untagged from '../Subcomponents/UnTagged';
 
 
 class SelectTags extends React.Component {
@@ -46,10 +47,10 @@ class SelectTags extends React.Component {
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
-          <h2 style={{textAlign: "center"}}>Select Tags</h2>
+          <h2 style={{ textAlign: "center" }}>Select Tags</h2>
           <h3>Tags : </h3>
           <div style={styles.tagged}>
-            {this.state.selected < 1 ? null : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]} />
+            {this.state.selected < 1 ? <Untagged /> : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]} />
             ))}
           </div>
           <div style={styles.selectorBox}>
@@ -57,7 +58,9 @@ class SelectTags extends React.Component {
               data-value={x}
               onClick={this.handleClick}
               key={y}>
-              {this.state.data === `${x}` ? <u>{`${x}`}</u> : `${x}`}
+              {this.state.data === `${x}`
+                ? <u>{`${x}`}</u>
+                : `${x}`}
             </div>)}
           </div>
           {/* This is the programatic rendering box 
@@ -87,7 +90,6 @@ const styles = {
     display: "inline-flex",
     flexWrap: "center",
     gap: "10px",
-    marginBottom: 25,
     position: "absolute"
   },
   counter: {
@@ -107,9 +109,10 @@ const styles = {
     textAlign: "center",
     gap: 20,
     marginLeft: "18%",
-    marginBottom: 20,
-    marginTop: 55
-  }
+    marginBottom: 10,
+    marginTop: 55,
+    textDecoration: "green"
+  },
 }
 
 export default SelectTags;

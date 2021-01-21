@@ -102,8 +102,11 @@ nav {
 
 #selector-container {
   position: relative;
-  text-align: center;
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: #2196F3;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
