@@ -15,7 +15,7 @@ const styles = {
     marginLeft: '100'
   },
   text : {
-    color: 'grey',
+    color: "rgb(130,130,130)",
     borderStyle: "solid",
     borderRadius: '25px',
     width: "100%",

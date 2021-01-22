@@ -31,7 +31,7 @@ const styles = {
     color: 'white',
     top: "40%",
     fontWeight: "bold"
-  }
+  },
 }
 
 

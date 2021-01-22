@@ -101,12 +101,17 @@ nav {
 }
 
 #selector-container {
+  margin-left: 35px;
   position: relative;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
+  flex-basis: 50%;
   flex-wrap: wrap;
-  gap: 10px;
-  background-color: gray;
+  gap: 5px;
+  background-color: rgb(44, 44, 44);
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 80%;
+  border: solid black;
+  border-radius: 15px;
 }

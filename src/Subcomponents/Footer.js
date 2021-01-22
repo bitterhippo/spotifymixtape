@@ -20,9 +20,9 @@ const Footer = props => {
 const styles = {
   footer: {
   marginTop: "90px",
-  height: 45,
+  height: 50,
   width: "375px",
-  backgroundColor: "gray",
+  backgroundColor: "rgb(40, 40,40)",
   position: "absolute",
   bottom: 0,
   display: "inline-flex",

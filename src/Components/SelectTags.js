@@ -99,10 +99,12 @@ const styles = {
     justifyContent: "center"
   },
   counterContainer: {
+    position: "absolute",
+    top: "84%",
     backgroundColor: "green",
     borderRadius: '25px',
     padding: 10,
-    width: 150
+    width: 150,
   },
   selectorBox: {
     display: "inline-flex",
