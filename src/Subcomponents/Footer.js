@@ -23,7 +23,8 @@ const styles = {
   position: "absolute",
   bottom: 0,
   display: "inline-flex",
-  justifyContent: "space-between"
+  justifyContent: "space-between",
+  borderRadius: "5px",
   },
   link : {
     marginRight: 10,

@@ -5,19 +5,22 @@ import '../App.css';
 
 
 
-function StatusBar() {
+const StatusBar = props => {
 
   return (
       <div id='status-bar'>
-        <div>{ new Date().toLocaleTimeString()}</div>
+        <div style={styles.timer}>{ new Date().toLocaleTimeString()}</div>
         <div id='status-bar-images'>
         </div>
     </div>
   )
 }
 
-
-
-
+const styles = {
+  timer :{
+    marginLeft: 10,
+    marginTop: 5
+  }
+}
 
 export default StatusBar;
