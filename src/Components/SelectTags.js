@@ -33,13 +33,12 @@ class SelectTags extends React.Component {
       this.setState({
         selected: [...this.state.selected, e.target.dataset.value]
       })
-      console.log(this.state)
     }
   }
 
   render() {
     //Current Test Block
-
+    
     const boxNames = ['Genre', 'Mood', 'Occasion', 'Activity'];
 
     return (

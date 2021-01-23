@@ -3,20 +3,24 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 
 const Footer = props => {
+
+  console.log(props.props)
+  
   return (
     <div style={styles.footer}>
       <div style={styles.home}>
-        <Link style={styles.link} to="/">Home</Link>
+        <Link style={styles.link} to="/">Home</Link> 
       </div>
       <div style={styles.linkBox}>
-        <Link 
-        style={styles.link} 
-        to={{
-          pathname: '/MixTape',
-          state: {
-            testValue: 'test'
-          }
-        }}>Next</Link>
+        <Link
+          style={styles.link}
+          to={{
+            pathname: "/MixTape",
+            state: {
+              testValue: props.props,
+
+            }
+          }}>Next</Link>
       </div>
     </div>
   )
@@ -24,21 +28,21 @@ const Footer = props => {
 
 const styles = {
   footer: {
-  marginTop: "90px",
-  height: 50,
-  width: "375px",
-  backgroundColor: "rgb(40, 40,40)",
-  position: "absolute",
-  bottom: 0,
-  display: "inline-flex",
-  justifyContent: "space-between",
-  borderRadius: "5px",
+    marginTop: "90px",
+    height: 50,
+    width: "375px",
+    backgroundColor: "rgb(40, 40,40)",
+    position: "absolute",
+    bottom: 0,
+    display: "inline-flex",
+    justifyContent: "space-between",
+    borderRadius: "5px",
   },
-  linkBox : {
+  linkBox: {
     marginRight: 25,
     marginTop: 10,
   },
-  link : {
+  link: {
     textDecoration: "none",
     color: "white"
   },

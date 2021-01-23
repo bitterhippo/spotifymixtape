@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Tagged = props => {
+
   return (
     <div style={styles.container}>
       <p style={styles.text}>{props.props[0]}</p>
