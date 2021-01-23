@@ -3,7 +3,6 @@ import '../App.css';
 
 
 const SongBox = props => {
-  console.log(props)
 
   return (
     <div style={styles.row}>

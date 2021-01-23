@@ -35,8 +35,6 @@ class App extends React.Component {
 
   render() {
     //Test Block Here
-    console.log('State Test')
-    console.log(this.state)
 
     return (
       <Router>

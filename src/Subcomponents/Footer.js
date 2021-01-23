@@ -9,7 +9,14 @@ const Footer = props => {
         <Link style={styles.link} to="/">Home</Link>
       </div>
       <div style={styles.linkBox}>
-        <Link style={styles.link} to="/Newtapes">Next</Link>
+        <Link 
+        style={styles.link} 
+        to={{
+          pathname: '/MixTape',
+          state: {
+            testValue: 'test'
+          }
+        }}>Next</Link>
       </div>
     </div>
   )

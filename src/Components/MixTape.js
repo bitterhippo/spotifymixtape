@@ -14,6 +14,7 @@ class MixTape extends React.Component {
 
 
   render () {
+    console.log(this.props.location.state)
     const arr = [1,2,3,4]
     return (
       <div>
