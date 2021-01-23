@@ -6,6 +6,7 @@ import DB from '../DB';
 import TextPic from '../Subcomponents/TextPic';
 import Tagged from '../Subcomponents/Tagged';
 import Untagged from '../Subcomponents/UnTagged';
+import { Link } from 'react-router-dom';
 
 
 class SelectTags extends React.Component {
@@ -76,6 +77,15 @@ class SelectTags extends React.Component {
           <div style={styles.counter}>
             <div style={styles.counterContainer}>
               {Math.floor(Math.random() * Math.floor(67))} Tracks
+              <Link
+          style={styles.link}
+          to={{
+            pathname: "/MixTape",
+            state: {
+              testValue: [...this.state.selected]
+
+            }
+          }}>Next</Link>
             </div>
           </div>
         </div>
