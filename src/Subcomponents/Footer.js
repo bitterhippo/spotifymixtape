@@ -1,14 +1,15 @@
 import React from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 const Footer = props => {
   return (
     <div style={styles.footer}>
       <div style={styles.home}>
-        Home
+        <Link style={styles.link} to="/">Home</Link>
       </div>
-      <div style={styles.link}>
-        Next
+      <div style={styles.linkBox}>
+        <Link style={styles.link} to="/Newtapes">Next</Link>
       </div>
     </div>
   )
@@ -26,12 +27,16 @@ const styles = {
   justifyContent: "space-between",
   borderRadius: "5px",
   },
+  linkBox : {
+    marginRight: 25,
+    marginTop: 10,
+  },
   link : {
-    marginRight: 10,
-    marginTop: 10
+    textDecoration: "none",
+    color: "white"
   },
   home: {
-    marginLeft: 10,
+    marginLeft: 25,
     marginTop: 10
   }
 }
