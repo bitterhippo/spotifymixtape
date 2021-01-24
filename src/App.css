@@ -74,15 +74,6 @@ nav {
   bottom: 0;
 }
 
-#notebox {
-  position: absolute;
-  margin-top: 80px;
-  margin-left: 35px;
-  width: 80%;
-  height: 30%;
-  background-color: green;
-}
-
 #createtag-info {
   position: absolute;
   margin-top: 400px;
@@ -115,4 +106,101 @@ nav {
   width: 80%;
   border: solid black;
   border-radius: 15px;
+}
+
+* { margin:0; padding:0 }
+
+figure {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+figure button[name="play"] {
+  width: 50px;
+  height: 50px;
+  background: green;
+  border: none;
+  border-radius: 100%;
+  margin: auto;
+  cursor: pointer;
+}
+figure button[name="play"]:focus {
+  outline: 0;
+  border: 1px solid hsl(210, 58%, 69%);
+  box-shadow: 0 0 0 3px hsla(210, 76%, 57%, 0.5);
+}
+
+figure button[name="play"]::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 3px;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent white;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
