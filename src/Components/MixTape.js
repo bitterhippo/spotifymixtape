@@ -5,16 +5,17 @@ import Footer from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import SongBox from '../Subcomponents/SongBox';
 import Player from "../Subcomponents/Player";
+import { Link } from "react-router-dom";
 
 
 class MixTape extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { }
+    this.state = {}
   }
 
 
-  render () {
+  render() {
     console.log(this.props.location.state.testValue)
     return (
       <div>
@@ -38,17 +39,34 @@ class MixTape extends React.Component {
           </div>
           <Player />
           <div style={styles.songList}>
-          <SongBox props={{img:'lol.jpeg',songName:'Waiting 4 Eva', artist:'Ruby f00 Krew'}} />
-          <SongBox props={{img:'lol.jpeg',songName:`It Took Too Long`, artist:'Da Snow Blowah'}} />
+            <div style={styles.songListBox}>
+              <SongBox props={{ img: 'lol.jpeg', songName: 'Waiting 4 Eva', artist: 'Ruby f00 Krew' }} />
+              <div style={styles.songListBoxLink}>
+              <Link
+          style={styles.link}
+          to={{
+            pathname: "/MixTape",
+            state: {
+              testValue: [...this.props.location.state.testValue, {song: 'Waiting 4 Eva', artist: 'Ruby f00 Krew', img: 'insert img here'}]
+
+            }
+          }}>Test</Link>
           </div>
-        </div> 
+            </div>
+            
+            <SongBox props={{ img: 'lol.jpeg', songName: `It Took Too Long`, artist: 'Da Snow Blowah' }} />
+          </div>
+          <div style={styles.songListBoxLink}>
+            TEST
+          </div>
+        </div>
       </div>
     );
   }
 }
 
 const styles = {
-  infoBox : {
+  infoBox: {
     position: "absolute",
     top: "44%",
     left: "25%",
@@ -56,7 +74,7 @@ const styles = {
     height: 100,
     width: 200
   },
-  follow : {
+  follow: {
     marginLeft: 40,
     textAlign: "center",
     marginTop: 15,
@@ -65,7 +83,7 @@ const styles = {
     borderRadius: '25px',
     width: "55%"
   },
-  text : {
+  text: {
     marginTop: 10,
     fontSize: 12
   },
@@ -78,6 +96,13 @@ const styles = {
     position: "absolute",
     bottom: "5%",
     marginLeft: 23,
+  },
+  songListBox: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  songListBoxLink: {
+
   }
 }
 

@@ -12,7 +12,8 @@ const styles = {
   container : {
     width: '100px',
     textAlign: "center",
-    marginLeft: '100'
+    marginLeft: '100',
+    marginTop: 15
   },
   text : {
     color: "rgb(130,130,130)",
