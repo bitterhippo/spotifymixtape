@@ -37,6 +37,10 @@ class MixTape extends React.Component {
             </div>
           </div>
           <Player />
+          <div style={styles.songList}>
+          <SongBox props={{img:'lol.jpeg',songName:'Waiting 4 Eva', artist:'Ruby f00 Krew'}} />
+          <SongBox props={{img:'lol.jpeg',songName:`It Took Too Long`, artist:'Da Snow Blowah'}} />
+          </div>
         </div> 
       </div>
     );
@@ -67,6 +71,13 @@ const styles = {
   },
   tapeName: {
     fontSize: 28,
+  },
+  songList: {
+    display: "flex",
+    flexDirection: "column",
+    position: "absolute",
+    bottom: "5%",
+    marginLeft: 23,
   }
 }
 

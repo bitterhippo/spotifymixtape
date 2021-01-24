@@ -22,17 +22,17 @@ const styles = {
     display: 'flex'
   },
   img: {
-    height: 75,
-    width: 75
+    height: 50,
+    width: 50
   },
   text: {
     height: 75,
     width: 200,
     justifyContent: 'center',
-    textAlign: 'center'
+    marginLeft: 10,
   },
   songName: {
-    fontSize: 18
+    fontSize: 14
   },
   artist: {
     fontSize: 12,
