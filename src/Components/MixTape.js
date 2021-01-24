@@ -42,22 +42,29 @@ class MixTape extends React.Component {
             <div style={styles.songListBox}>
               <SongBox props={{ img: 'lol.jpeg', songName: 'Waiting 4 Eva', artist: 'Ruby f00 Krew' }} />
               <div style={styles.songListBoxLink}>
-              <Link
-          style={styles.link}
-          to={{
-            pathname: "/MixTape",
-            state: {
-              testValue: [...this.props.location.state.testValue, {song: 'Waiting 4 Eva', artist: 'Ruby f00 Krew', img: 'insert img here'}]
-
-            }
-          }}>Test</Link>
-          </div>
+                <Link
+                  style={styles.songListBoxLink}
+                  to={{
+                    pathname: "/MixTape",
+                    state: {
+                      testValue: [...this.props.location.state.testValue, { song: 'Waiting 4 Eva', artist: 'Ruby f00 Krew', img: 'insert img here' }]
+                    }
+                  }}>View</Link>
+              </div>
             </div>
-            
-            <SongBox props={{ img: 'lol.jpeg', songName: `It Took Too Long`, artist: 'Da Snow Blowah' }} />
-          </div>
-          <div style={styles.songListBoxLink}>
-            TEST
+            <div style={styles.songListBox}>
+              <SongBox props={{ img: 'lol.jpeg', songName: `It Took Too Long`, artist: 'Da Snow Blowah' }} />
+              <div style={styles.songListBoxLink}>
+                <Link
+                  style={styles.songListBoxLink}
+                  to={{
+                    pathname: "/MixTape",
+                    state: {
+                      testValue: [...this.props.location.state.testValue, { song: 'It Took Too Long', artist: 'Da Snow Blowah', img: 'insert img here' }]
+                    }
+                  }}>View</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +109,9 @@ const styles = {
     justifyContent: "space-between",
   },
   songListBoxLink: {
-
+    textDecoration: "none",
+    marginLeft: 15,
+    color: "white"
   }
 }
 

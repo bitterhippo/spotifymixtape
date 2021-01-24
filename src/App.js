@@ -6,6 +6,7 @@ import Viewscreen from './Subcomponents/Viewscreen';
 import Newtapes from './Components/Newtapes';
 import SelectTags from './Components/SelectTags';
 import MixTape from './Components/MixTape';
+import SongView from "./Components/SongView";
 
 class App extends React.Component {
   constructor() {
@@ -43,6 +44,7 @@ class App extends React.Component {
             <Route path='/Newtapes' exact component={Newtapes} />
             <Route path='/SelectTags' exact component={SelectTags} />
             <Route path='/MixTape' exact component={MixTape} />
+            <Route path='/SongView' exact component={SongView} />
             <Viewscreen />
           </Switch>
         </div>
