@@ -13,9 +13,9 @@ const Player = props => {
         </div>
       </div>
       <div style={styles.toggle}>
-        <label class="switch">
+        <label className="switch">
           <input type="checkbox" />
-          <span class="slider round"></span>
+          <span className="slider round"></span>
         </label>
         <div style={styles.toggle2}>
           Show Liked Songs
@@ -40,7 +40,7 @@ const styles = {
   },
   shuffler2: {
     marginLeft: 11,
-    marginTop: 15,
+    marginTop: 17,
   },
   toggle: {
     display: "inline-flex",
@@ -49,7 +49,7 @@ const styles = {
   },
   toggle2: {
     fontSize: 12,
-    marginTop: 11,
+    marginTop: 12,
     marginRight: 5
   }
 };
