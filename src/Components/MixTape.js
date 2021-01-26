@@ -45,7 +45,7 @@ class MixTape extends React.Component {
                 <Link
                   style={styles.songListBoxLink}
                   to={{
-                    pathname: "/MixTape",
+                    pathname: "/SongView",
                     state: {
                       testValue: [...this.props.location.state.testValue, { song: 'Waiting 4 Eva', artist: 'Ruby f00 Krew', img: 'insert img here' }]
                     }
@@ -58,7 +58,7 @@ class MixTape extends React.Component {
                 <Link
                   style={styles.songListBoxLink}
                   to={{
-                    pathname: "/MixTape",
+                    pathname: "/SongView",
                     state: {
                       testValue: [...this.props.location.state.testValue, { song: 'It Took Too Long', artist: 'Da Snow Blowah', img: 'insert img here' }]
                     }
