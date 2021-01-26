@@ -110,7 +110,7 @@ const styles = {
   },
   counterContainer: {
     position: "absolute",
-    top: "84%",
+    top: "80%",
     backgroundColor: "green",
     borderRadius: '25px',
     padding: 10,

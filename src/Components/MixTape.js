@@ -47,7 +47,10 @@ class MixTape extends React.Component {
                   to={{
                     pathname: "/SongView",
                     state: {
-                      testValue: [...this.props.location.state.testValue, { song: 'Waiting 4 Eva', artist: 'Ruby f00 Krew', img: 'insert img here' }]
+                      tags: [...this.props.location.state.testValue],
+                      song: 'Waiting 4 Eva', 
+                      artist: 'Ruby f00 Krew', 
+                      img: 'insert img here'
                     }
                   }}>View</Link>
               </div>
@@ -60,7 +63,10 @@ class MixTape extends React.Component {
                   to={{
                     pathname: "/SongView",
                     state: {
-                      testValue: [...this.props.location.state.testValue, { song: 'It Took Too Long', artist: 'Da Snow Blowah', img: 'insert img here' }]
+                      testValue: [...this.props.location.state.testValue],
+                      song: 'It Took Too Long', 
+                      artist: 'Da Snow Blowah', 
+                      img: 'insert img here'
                     }
                   }}>View</Link>
               </div>
