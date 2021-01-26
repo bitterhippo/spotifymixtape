@@ -20,9 +20,11 @@ const SongView = props => {
         <div style={styles.songTitle}>
           {data.song}
         </div>
-        <div style={styles.songTags}>
-          TAGS <br />
+        <div style={styles.songTagsContainer}>
+          <b>TAGS</b>
+          <div style={styles.songTags}>
           {data.tags.map((x,y) => <Tagged key={y} props={[x]} />)}
+          </div>
         </div>
       </div>
     </div>
@@ -35,17 +37,23 @@ const styles = {
     flexDirection: "column",
     position: "absolute",
     top: "50%",
-    backgroundColor: "red",
+    backgroundColor: "",
     width: "100%",
     marginLeft: 55,
   },
   songTitle: {
+    fontSize: 20,
+    fontWeight: "bold"
+  },
+  songTagsContainer : {
+    marginTop: 100,
     fontSize: 20
   },
   songTags : {
-    marginTop: 100,
     display: "flex",
-    gap: 10
+    flexDirection: "row",
+    gap: 15,
+    fontSize: 16
   }
 }
 
