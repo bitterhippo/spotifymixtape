@@ -13,7 +13,7 @@ const styles = {
   songBox: {
     display: "flex",
     flexDirection: "column",
-    height: 120,
+    height: 150,
     width: 120,
     marginTop: 10
   },

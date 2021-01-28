@@ -23,8 +23,11 @@ const Viewscreen = props => {
       <div style={styles.message}>
         <h2>Your Mixtape</h2>
         <p>You bring the magic, we'll do the heavy lifting.</p>
+        <div style={styles.tapeLink}>
+          <p style={styles.tapeLinkText}>Create Mixtape</p>
+        </div>
       </div>
-      <div>
+      <div style={styles.played}>
         <h2>Recently Played</h2>
         <div style={styles.songPics}>
           <SongPic props={{ img: 'Rock.jpeg', text: 'TEST' }} />
@@ -57,7 +60,27 @@ const styles = {
   },
   songPics: {
     display: "inline-flex",
-    gap: 5
+    gap: 5,
+    marginTop: 35,
+    height: 150
+  },
+  tapeLink: {
+    display: "flex",
+    marginTop: 25,
+    justifyContent: "center",
+    backgroundColor: "rgb(29 185 84)",
+    height: 40,
+    width: 250,
+    borderRadius: 30,
+    marginLeft: 50
+  },
+  tapeLinkText: {
+    textAlign: "center",
+    verticalAlign: "center",
+    marginTop: 10
+  },
+  played: {
+    marginTop: 40
   }
 }
 
