@@ -1,8 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function NoteBox() {
-
+const NoteBox = props => {
   return (
     <div style={styles.noteBox}>
       NoteBox

@@ -74,16 +74,6 @@ nav {
   bottom: 0;
 }
 
-#createtag-info {
-  position: absolute;
-  margin-top: 400px;
-  margin-left: 35px;
-  width: 80%;
-  height: 20%;
-  background-color: red;
-  text-align: center;
-}
-
 #createtag-imgs {
   position: absolute;
   display: inline-flex;

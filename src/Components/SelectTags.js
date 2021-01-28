@@ -116,7 +116,7 @@ const styles = {
     gap: 20,
     marginLeft: "18%",
     marginBottom: 10,
-    marginTop: 55,
+    marginTop: 65,
     textDecoration: "green"
   },
 }

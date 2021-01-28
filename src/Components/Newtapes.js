@@ -13,14 +13,25 @@ function Newtapes () {
         <StatusBar />
         <NoteBox />
         <CreateTagInfo />
+          <div style={styles.imgBox}>
+            <TextPic props={['Funk.jpeg', 'Funk']} />
+            <TextPic props={['Pop.jpeg', 'Pop']} />
+          </div>
         <Footer />
-      <div id="createtag-imgs">
-        <TextPic props={['Funk.jpeg', 'Funk']} />
-        <TextPic props={['Pop.jpeg', 'Pop']} />
-        </div>
       </div>
     </div>
   );
+}
+
+const styles = {
+  imgBox : {
+    display: "flex",
+    flexDirection: "inline-flex",
+    gap: 50,
+    position: "absolute",
+    bottom: "15%",
+    left: "15%"
+  }
 }
 
 
