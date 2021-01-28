@@ -40,7 +40,7 @@ class SelectTags extends React.Component {
 
   render() {
     //Current Test Block
-    
+
     const boxNames = ['Genre', 'Mood', 'Occasion', 'Activity'];
 
     return (
@@ -64,12 +64,6 @@ class SelectTags extends React.Component {
                 : `${x}`}
             </div>)}
           </div>
-          {/* This is the programatic rendering box 
-            
-            <div className="box-text">{current.name}</div>
-              <img onClick={this.getElement} data-value={current.name} className="img-tile" src={current.img} height="100px" width="100px" />
-            
-          */}
           <div id="selector-container">
             {DB[this.state.data].map((current, int) => <div key={int}>
               <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`, `${current.name}`]} />
@@ -79,14 +73,14 @@ class SelectTags extends React.Component {
             <div style={styles.counterContainer}>
               {Math.floor(Math.random() * Math.floor(67))} Tracks
               <Link
-          style={styles.link}
-          to={{
-            pathname: "/MixTape",
-            state: {
-              testValue: [...this.state.selected]
+                style={styles.link}
+                to={{
+                  pathname: "/MixTape",
+                  state: {
+                    testValue: [...this.state.selected]
 
-            }
-          }}>Next</Link>
+                  }
+                }}>Next</Link>
             </div>
           </div>
         </div>

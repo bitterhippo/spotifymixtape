@@ -10,7 +10,7 @@ const SongView = props => {
   const data = props.location.state
 
   console.log(data)
-  
+
   return (
     <div id="viewscreen">
       <Footer />
@@ -19,11 +19,15 @@ const SongView = props => {
       <div style={styles.playerBox}>
         <div style={styles.songTitle}>
           {data.song}
+          <audio controls style={styles.player}>
+            <source src="horse.ogg" type="audio/ogg" />
+            <source src="horse.mp3" type="audio/mpeg" />
+          </audio>
         </div>
         <div style={styles.songTagsContainer}>
           <b>TAGS</b>
           <div style={styles.songTags}>
-          {data.tags.map((x,y) => <Tagged key={y} props={[x]} />)}
+            {data.tags.map((x, y) => <Tagged key={y} props={[x]} />)}
           </div>
         </div>
       </div>
@@ -32,24 +36,28 @@ const SongView = props => {
 }
 
 const styles = {
-  playerBox : {
+  playerBox: {
     display: "flex",
     flexDirection: "column",
     position: "absolute",
     top: "50%",
     backgroundColor: "",
     width: "100%",
-    marginLeft: 55,
+    marginLeft: 5
+  },
+  player : {
+    marginLeft: 30,
+    marginTop: 30
   },
   songTitle: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  songTagsContainer : {
-    marginTop: 100,
+  songTagsContainer: {
+    marginTop: 60,
     fontSize: 20
   },
-  songTags : {
+  songTags: {
     display: "flex",
     flexDirection: "row",
     gap: 15,
