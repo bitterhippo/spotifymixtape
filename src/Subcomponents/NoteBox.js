@@ -16,13 +16,13 @@ const styles = {
     marginLeft: `60px`,
     width: 250,
     height: 250,
-    backgroundColor: `green`
+    borderStyle: "solid",
+    borderColor: "black",
+    borderRadius: "5px"
   },
   img: {
     height: "100%",
     width: "100%",
-    borderRadius: "5px",
-    borderStyle: "black"
   }
 }
 

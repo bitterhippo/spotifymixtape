@@ -15,7 +15,7 @@ const SongView = props => {
     <div id="viewscreen">
       <Footer />
       <StatusBar />
-      <NoteBox/>
+      <NoteBox props={{img: "rave.jpg"}}/>
       <div style={styles.playerBox}>
         <div style={styles.songTitle}>
           {data.song}

@@ -16,13 +16,13 @@ class MixTape extends React.Component {
 
 
   render() {
-    console.log(this.props.location.state.testValue)
+    console.log(this.props.location)
     return (
       <div>
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
-          <NoteBox />
+          <NoteBox props={{img: "musicstore.jpg"}}/>
           <div style={styles.infoBox}>
             <div style={styles.tapeName}>
               Mixtape #1
