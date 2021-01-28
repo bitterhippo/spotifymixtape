@@ -20,8 +20,8 @@ const SongView = props => {
         <div style={styles.songTitle}>
           {data.song}
           <audio controls style={styles.player}>
-            <source src="horse.ogg" type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
+            <source type="audio/ogg" />
+            <source type="audio/mpeg" />
           </audio>
         </div>
         <div style={styles.songTagsContainer}>
