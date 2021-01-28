@@ -15,7 +15,7 @@ const SongView = props => {
     <div id="viewscreen">
       <Footer />
       <StatusBar />
-      <NoteBox />
+      <NoteBox/>
       <div style={styles.playerBox}>
         <div style={styles.songTitle}>
           {data.song}
@@ -55,11 +55,12 @@ const styles = {
   },
   songTagsContainer: {
     marginTop: 60,
-    fontSize: 20
+    fontSize: 20,
   },
   songTags: {
     display: "flex",
     flexDirection: "row",
+    justifyContent: "center",
     gap: 15,
     fontSize: 16
   }

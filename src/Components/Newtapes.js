@@ -11,7 +11,7 @@ function Newtapes () {
     <div>
       <div id='viewscreen'>
         <StatusBar />
-        <NoteBox />
+        <NoteBox props={{img: "note.png"}}/>
         <CreateTagInfo />
           <div style={styles.imgBox}>
             <TextPic props={['Funk.jpeg', 'Funk']} />
