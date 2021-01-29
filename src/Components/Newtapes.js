@@ -5,6 +5,7 @@ import Footer from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import CreateTagInfo from '../Subcomponents/CreateTagInfo';
 import TextPic from '../Subcomponents/TextPic';
+import SongPic from "../Subcomponents/SongPic";
 
 function Newtapes () {
   return (
@@ -14,8 +15,8 @@ function Newtapes () {
         <NoteBox props={{img: "rave.jpg"}}/>
         <CreateTagInfo />
           <div style={styles.imgBox}>
-            <TextPic props={['Funk.jpeg', 'Funk']} />
-            <TextPic props={['Pop.jpeg', 'Pop']} />
+            <SongPic props={{img:"pop.jpeg",text:"lol"}} />
+            <SongPic props={['Pop.jpeg', 'Pop']} />
           </div>
         <Footer />
       </div>
