@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { Link } from "react-router-dom";
 //Presnetation Components
 import StatusBar from './StatusBar';
 import Footer from './Footer';
@@ -24,7 +25,9 @@ const Viewscreen = props => {
         <h2>Your Mixtape</h2>
         <p>You bring the magic, we'll do the heavy lifting.</p>
         <div style={styles.tapeLink}>
-          <p style={styles.tapeLinkText}>Create Mixtape</p>
+          <Link 
+          style={styles.tapeLinkText} 
+          to="/Newtapes">Create Mixtape</Link>
         </div>
       </div>
       <div style={styles.played}>
@@ -73,12 +76,14 @@ const styles = {
     height: 40,
     width: 250,
     borderRadius: 30,
-    marginLeft: 50
+    marginLeft: 50,
   },
   tapeLinkText: {
     textAlign: "center",
     verticalAlign: "center",
-    marginTop: 10
+    marginTop: 10,
+    textDecoration: "none",
+    color: "white"
   },
   played: {
     marginTop: 40
