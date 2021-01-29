@@ -60,9 +60,10 @@ const styles = {
   },
   songPics: {
     display: "inline-flex",
+    marginLeft: 15,
     gap: 5,
-    marginTop: 35,
-    height: 150
+    marginTop: 15,
+    height: 150,
   },
   tapeLink: {
     display: "flex",

@@ -3,7 +3,7 @@ import React from "react";
 const SongPic = props => {
   return (
     <div style={styles.songBox}>
-      <img src={props.props.img}/>
+      <img style={styles.img} src={props.props.img}/>
       <p style={styles.text}>{props.props.text}</p>
     </div>
   )
@@ -13,13 +13,15 @@ const styles = {
   songBox: {
     display: "flex",
     flexDirection: "column",
-    height: 150,
-    width: 120,
+    width: 110,
     marginTop: 10
   },
   text: {
     textAlign: "center",
     marginTop: 5
+  },
+  img: {
+    height: 110
   }
 }
 
