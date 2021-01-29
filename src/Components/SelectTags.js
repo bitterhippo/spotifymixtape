@@ -71,7 +71,6 @@ class SelectTags extends React.Component {
           </div>
           <div style={styles.counter}>
             <div style={styles.counterContainer}>
-              {Math.floor(Math.random() * Math.floor(67))} Tracks
               <Link
                 style={styles.link}
                 to={{
@@ -80,7 +79,7 @@ class SelectTags extends React.Component {
                     testValue: [...this.state.selected]
 
                   }
-                }}>Next</Link>
+                }}>{Math.floor(Math.random() * Math.floor(67))} Tracks</Link>
             </div>
           </div>
         </div>
@@ -119,6 +118,10 @@ const styles = {
     marginTop: 65,
     textDecoration: "green"
   },
+  link: {
+    textDecoration: "none",
+    color: "white"
+  }
 }
 
 export default SelectTags;

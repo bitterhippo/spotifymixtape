@@ -4,20 +4,25 @@ import StatusBar from '../Subcomponents/Footer';
 import Footer from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import CreateTagInfo from '../Subcomponents/CreateTagInfo';
-import TextPic from '../Subcomponents/TextPic';
 import SongPic from "../Subcomponents/SongPic";
+import { Link } from "react-router-dom";
 
-function Newtapes () {
+function Newtapes() {
   return (
     <div>
       <div id='viewscreen'>
         <StatusBar />
-        <NoteBox props={{img: "rave.jpg"}}/>
+        <NoteBox props={{ img: "rave.jpg" }} />
         <CreateTagInfo />
-          <div style={styles.imgBox}>
-            <SongPic props={{img:"pop.jpeg",text:"lol"}} />
-            <SongPic props={['Pop.jpeg', 'Pop']} />
-          </div>
+        <div style={styles.imgBox}>
+          <SongPic props={{ img: "pop.jpeg", text: "Pop" }} />
+          <SongPic props={{ img: 'RnB.jpg', text: 'Rap' }} />
+        </div>
+        <div style={styles.tapeLink}>
+          <Link
+            style={styles.tapeLinkText}
+            to="/SelectTags">Add Tags</Link>
+        </div>
         <Footer />
       </div>
     </div>
@@ -25,13 +30,33 @@ function Newtapes () {
 }
 
 const styles = {
-  imgBox : {
+  imgBox: {
     display: "flex",
     flexDirection: "inline-flex",
     gap: 50,
     position: "absolute",
     bottom: "15%",
     left: "15%"
+  },
+  tapeLink: {
+    display: "flex",
+    marginTop: 25,
+    justifyContent: "center",
+    backgroundColor: "white",
+    height: 40,
+    width: 200,
+    borderRadius: 30,
+    marginLeft: 90,
+    position: "absolute",
+    bottom: "8%"
+  },
+  tapeLinkText: {
+    textAlign: "center",
+    verticalAlign: "center",
+    marginTop: 10,
+    textDecoration: "none",
+    color: "black",
+
   }
 }
 

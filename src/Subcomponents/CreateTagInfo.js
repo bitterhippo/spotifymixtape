@@ -21,7 +21,7 @@ function CreateTagInfo() {
 const styles = {
   infoBox : {
     position: "absolute",
-    marginTop: "325px",
+    marginTop: "300px",
     marginLeft: "35px",
     width: "80%",
     height: "20%",

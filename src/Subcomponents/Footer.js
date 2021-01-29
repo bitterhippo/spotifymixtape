@@ -11,17 +11,6 @@ const Footer = props => {
       <div style={styles.home}>
         <Link style={styles.link} to="/">Home</Link> 
       </div>
-      <div style={styles.linkBox}>
-        <Link
-          style={styles.link}
-          to={{
-            pathname: "/MixTape",
-            state: {
-              testValue: props.props,
-
-            }
-          }}>Next</Link>
-      </div>
     </div>
   )
 }
@@ -35,7 +24,7 @@ const styles = {
     position: "absolute",
     bottom: 0,
     display: "inline-flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     borderRadius: "5px",
   },
   linkBox: {
@@ -47,7 +36,6 @@ const styles = {
     color: "white"
   },
   home: {
-    marginLeft: 25,
     marginTop: 10
   }
 }
