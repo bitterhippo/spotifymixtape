@@ -8,8 +8,6 @@ import Tagged from '../Subcomponents/Tagged';
 import Untagged from '../Subcomponents/UnTagged';
 import { Link } from 'react-router-dom';
 
-
-
 class SelectTags extends React.Component {
   constructor(props) {
     super(props);
