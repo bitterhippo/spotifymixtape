@@ -39,7 +39,7 @@ const Data = {
     },
     {
       name: `Sad`,
-      img: `Country.jpg`,
+      img: `Country.jpeg`,
       tags: ``
     },
     {
@@ -49,7 +49,7 @@ const Data = {
     },
     {
       name: `Focused`,
-      img: `Classical.jpg`,
+      img: `Classical.jpeg`,
       tags: ``
     },
     {
@@ -71,7 +71,7 @@ const Data = {
     },
     {
       name: `Studying`,
-      img: `Country.jpg`,
+      img: `Country.jpeg`,
       tags: ``
     },
     {
@@ -81,7 +81,7 @@ const Data = {
     },
     {
       name: `Driving`,
-      img: `Classical.jpg`,
+      img: `Classical.jpeg`,
       tags: ``
     },
     {
@@ -103,7 +103,7 @@ const Data = {
     },
     {
       name: `Outdoor Party`,
-      img: `Country.jpg`,
+      img: `Country.jpeg`,
       tags: ``
     },
     {
@@ -113,7 +113,7 @@ const Data = {
     },
     {
       name: `Dueling`,
-      img: `Classical.jpg`,
+      img: `Classical.jpeg`,
       tags: ``
     },
     {
