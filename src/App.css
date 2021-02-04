@@ -38,33 +38,6 @@ nav {
   top: 0;
 }
 
-#mixtapes {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 20%;
-  background-color: gray;
-}
-
-#newmixtapes {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 20%;
-  background-color: green;
-}
-
-#recentlyplayed {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 20%;
-  background-color: pink;
-}
-
 #footer {
   margin-top: 90px;
   height: 5%;
