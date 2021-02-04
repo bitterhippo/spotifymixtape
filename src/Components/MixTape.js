@@ -40,7 +40,7 @@ class MixTape extends React.Component {
           <Player />
           <div style={styles.songList}>
             <div style={styles.songListBox}>
-              <SongBox props={{ img: 'lol.jpeg', songName: 'Waiting 4 Eva', artist: 'Ruby f00 Krew' }} />
+              <SongBox props={{ img: 'Funk.jpeg', songName: 'Waiting 4 Eva', artist: 'Ruby f00 Krew' }} />
               <div style={styles.songListBoxLink}>
                 <Link
                   style={styles.songListBoxLink}
@@ -56,7 +56,7 @@ class MixTape extends React.Component {
               </div>
             </div>
             <div style={styles.songListBox}>
-              <SongBox props={{ img: 'lol.jpeg', songName: `It Took Too Long`, artist: 'Da Snow Blowah' }} />
+              <SongBox props={{ img: 'Punk.jpeg', songName: `It Took Too Long`, artist: 'Da Snow Blowah' }} />
               <div style={styles.songListBoxLink}>
                 <Link
                   style={styles.songListBoxLink}

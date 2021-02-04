@@ -33,9 +33,9 @@ const Viewscreen = props => {
       <div style={styles.played}>
         <h2>Recently Played</h2>
         <div style={styles.songPics}>
-          <SongPic props={{ img: 'Rock.jpeg', text: 'TEST' }} />
-          <SongPic props={{ img: 'Rock.jpeg', text: 'TEST' }} />
-          <SongPic props={{ img: 'Rock.jpeg', text: 'TEST' }} />
+          <SongPic props={{ img: 'Rock.jpeg', text: 'Birbs N Bros' }} />
+          <SongPic props={{ img: 'rave.jpg', text: 'Lost on the Dock' }} />
+          <SongPic props={{ img: 'Punk.jpeg', text: 'Lit 4 Lyfe' }} />
         </div>
       </div>
     </div>
