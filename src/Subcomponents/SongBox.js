@@ -10,8 +10,8 @@ const SongBox = props => {
         <img alt="" src={props.props.img} style={styles.img}/>
       </div>
       <div style={styles.text}>
-        <span style={styles.songName}>Song: {props.props.songName} <br></br></span>
-        <span style={styles.artist}>By: {props.props.artist}</span>
+        <span style={styles.songName}>{props.props.songName} <br></br></span>
+        <span style={styles.artist}>{props.props.artist}</span>
       </div>
     </div>
   )

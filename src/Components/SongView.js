@@ -18,14 +18,15 @@ const SongView = props => {
       <NoteBox props={{img: "rave.jpg"}}/>
       <div style={styles.playerBox}>
         <div style={styles.songTitle}>
-          {data.song}
+          <span style={styles.songTitle}>{data.song} <br></br></span>
+          <span style={styles.artistName}>{data.artist}</span>
           <audio controls style={styles.player}>
             <source type="audio/ogg" />
             <source type="audio/mpeg" />
           </audio>
         </div>
         <div style={styles.songTagsContainer}>
-          <b>TAGS</b>
+          <b>Tags</b>
           <div style={styles.songTags}>
             {data.tags.map((x, y) => <Tagged key={y} props={[x]} />)}
           </div>
@@ -46,30 +47,31 @@ const styles = {
     marginLeft: 5
   },
   player : {
-    marginLeft: 30,
+    marginLeft: 15,
     marginTop: 30
   },
   songTitle: {
     fontSize: 20,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    marginLeft: 15
   },
   songTagsContainer: {
     marginTop: 60,
     fontSize: 20,
+    marginLeft: 30
   },
   songTags: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "left",
     gap: 15,
-    fontSize: 16
+    fontSize: 16,
+  },
+  artistName : {
+    color: "grey",
+    fontSize: 14,
+    marginLeft: 15
   }
 }
-
-
-
-
-
-
 
 export default SongView;

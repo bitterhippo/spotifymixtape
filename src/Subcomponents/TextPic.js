@@ -16,14 +16,13 @@ const styles = {
     position: "relative",
     justifyContent: "center",
     height: 100,
-    width: 100,
-    borderStyle: "solid",
-    borderColor: "black"
+    width: 100
   },
   img: {
     position: "absolute",
     height: "100%",
     width: "100%",
+    opacity: 0.6
   },
   text: {
     fontSize: 20,

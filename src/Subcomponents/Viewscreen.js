@@ -51,8 +51,9 @@ const styles = {
     display: "flex",
     flexDirection: "inline-flex",
     flexWrap: "wrap",
-    gap: 5,
-    marginTop: 25
+    gap: 3,
+    marginTop: 25,
+    marginLeft: 10
   },
   message: {
     marginTop: 25
@@ -76,7 +77,7 @@ const styles = {
     height: 40,
     width: 250,
     borderRadius: 30,
-    marginLeft: 50,
+    marginLeft: 60,
   },
   tapeLinkText: {
     textAlign: "center",

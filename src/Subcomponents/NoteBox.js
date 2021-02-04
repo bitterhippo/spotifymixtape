@@ -16,8 +16,6 @@ const styles = {
     marginLeft: `60px`,
     width: 250,
     height: 250,
-    borderStyle: "solid",
-    borderColor: "black",
     borderRadius: "5px"
   },
   img: {
