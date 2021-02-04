@@ -58,7 +58,7 @@ class SelectTags extends React.Component {
               onClick={this.handleClick}
               key={y}>
               {this.state.data === `${x}`
-                ? <u>{`${x}`}</u>
+                ? <span style={styles.selected}>{`${x}`}</span>
                 : `${x}`}
             </div>)}
           </div>
@@ -119,6 +119,9 @@ const styles = {
   link: {
     textDecoration: "none",
     color: "white"
+  },
+  selected : {
+    textDecoration: "underline solid white 2px"
   }
 }
 
