@@ -1,16 +1,23 @@
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import { IoHomeOutline, IoSearchOutline, IoLibraryOutline } from "react-icons/io5";
 
 const Footer = props => {
 
   console.log(props.props)
-  
+
   return (
     <div style={styles.footer}>
-      <div style={styles.home}>
-        <Link style={styles.link} to="/">Home</Link> 
-      </div>
+      <Link style={styles.link} to="/">
+        <IoHomeOutline
+          style={styles.home} />
+      </Link>
+      <IoSearchOutline
+        style={styles.search}
+      />
+      <IoLibraryOutline
+        style={styles.library} />
     </div>
   )
 }
@@ -27,15 +34,22 @@ const styles = {
     justifyContent: "center",
     borderRadius: "5px",
   },
-  linkBox: {
-    marginRight: 25,
-    marginTop: 10,
-  },
   link: {
     textDecoration: "none",
     color: "white"
   },
   home: {
+    fontSize: "25px",
+    marginRight: 90,
+    marginTop: 10
+  },
+  library: {
+    fontSize: "25px",
+    marginTop: 10,
+    marginLeft: 90
+  },
+  search: {
+    fontSize: "25px",
     marginTop: 10
   }
 }
