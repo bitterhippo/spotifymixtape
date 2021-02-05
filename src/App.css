@@ -36,11 +36,6 @@ nav {
   border-radius: 10px;
 }
 
-#statusbar{
-  position: absolute;
-  top: 0;
-}
-
 #footer {
   margin-top: 90px;
   height: 5%;

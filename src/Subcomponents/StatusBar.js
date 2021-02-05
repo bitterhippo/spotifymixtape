@@ -1,25 +1,40 @@
 import React from 'react';
 import '../App.css';
-
-
-
+import { IoBatteryFull, IoBarChart, IoWifi } from "react-icons/io5";
 
 
 const StatusBar = props => {
 
   return (
-      <div id='status-bar'>
-        <div style={styles.timer}>{ new Date().toLocaleTimeString()}</div>
-        <div id='status-bar-images'>
-        </div>
+    <div style={styles.statusBar}>
+      <div style={styles.timer}>
+        {new Date().toLocaleTimeString()}
+      </div>
+      <div style={styles.items}>
+        <IoBarChart />
+        <IoWifi />
+        <IoBatteryFull />
+      </div>
     </div>
   )
 }
 
 const styles = {
-  timer :{
-    marginLeft: 10,
+  statusBar: {
+    display: "flex",
+    flexDirection: "inline-flex",
+    justifyContent: "space-between"
+  },
+  timer: {
+    marginLeft: 15,
     marginTop: 5
+  },
+  items: {
+    display: "flex",
+    marginTop: 5,
+    marginRight: 20,
+    gap: 3,
+    fontSize: 18
   }
 }
 

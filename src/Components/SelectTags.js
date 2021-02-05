@@ -5,7 +5,6 @@ import Footer from '../Subcomponents/StatusBar';
 import DB from '../DB';
 import TextPic from '../Subcomponents/TextPic';
 import Tagged from '../Subcomponents/Tagged';
-import Untagged from '../Subcomponents/UnTagged';
 import { Link } from 'react-router-dom';
 
 class SelectTags extends React.Component {
