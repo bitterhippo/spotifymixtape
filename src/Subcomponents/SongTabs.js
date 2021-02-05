@@ -22,9 +22,9 @@ const styles = {
   textBox: {
     backgroundColor: 'rgb(44 44 44)',
     height: 50,
-    width: 125,
+    width: 115,
     textAlign: "center",
-    borderRaidus: 5
+    borderRadius: 5
   },
   text: {
     marginTop: 15,

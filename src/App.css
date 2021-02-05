@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(//db.onlinewebfonts.com/c/4504d77ae8b1517de38b53c4c4ec6461?family=Circular+Sp+UI+v3+T+Bold) format('woff');
+}
+
 * { 
   margin:0; 
-  padding:0 
+  padding:0;
+  font-family: 'MyFont'; 
 }
 
 nav {
@@ -28,8 +34,9 @@ nav {
   position: relative;
   height: 700px;
   width: 375px;
-  background-image: radial-gradient(farthest-corner at 40px 40px,
-  rgb(45, 35, 68) 0%, rgb(1, 0, 10) 100%);
+  background-image: radial-gradient(farthest-corner at 20px 50px,
+  rgb(22, 11, 48) 15%, rgb(1, 0, 3) 100%);
+  background-color: "black";
   color: white;
   border-radius: 10px;
 }

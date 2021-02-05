@@ -31,7 +31,7 @@ const Viewscreen = props => {
         </div>
       </div>
       <div style={styles.played}>
-        <h2>Recently Played</h2>
+        <h2 style={styles.headerTwo}>Recently Played</h2>
         <div style={styles.songPics}>
           <SongPic props={{ img: 'Rock.jpeg', text: 'Birbs N Bros' }} />
           <SongPic props={{ img: 'rave.jpg', text: 'Lost on the Dock' }} />
@@ -45,7 +45,8 @@ const Viewscreen = props => {
 const styles = {
   header: {
     marginTop: 20,
-    fontWeight: 16
+    fontWeight: 16,
+    marginLeft: 25
   },
   tabBox: {
     display: "flex",
@@ -53,10 +54,12 @@ const styles = {
     flexWrap: "wrap",
     gap: 3,
     marginTop: 25,
-    marginLeft: 10
+    marginLeft: 15,
+    columnGap: 10
   },
   message: {
-    marginTop: 25
+    marginTop: 25,
+    marginLeft: 25
   },
   playedBox: {
     display: "flex",
@@ -77,7 +80,7 @@ const styles = {
     height: 40,
     width: 250,
     borderRadius: 30,
-    marginLeft: 60,
+    marginLeft: 40,
   },
   tapeLinkText: {
     textAlign: "center",
@@ -88,6 +91,9 @@ const styles = {
   },
   played: {
     marginTop: 40
+  },
+  headerTwo: {
+    marginLeft: 25
   }
 }
 
