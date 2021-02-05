@@ -9,15 +9,25 @@ const Footer = props => {
 
   return (
     <div style={styles.footer}>
-      <Link style={styles.link} to="/">
-        <IoHomeOutline
-          style={styles.home} />
-      </Link>
-      <IoSearchOutline
-        style={styles.search}
-      />
-      <IoLibraryOutline
-        style={styles.library} />
+      <div style={styles.nameBox}>
+        <Link style={styles.link} to="/">
+          <IoHomeOutline
+            style={styles.home} />
+        </Link>
+        Home
+      </div>
+      <div style={styles.nameBox}>
+        <IoSearchOutline
+          style={styles.search}
+        />
+        Search
+      </div>
+      <div style={styles.nameBox}>
+        <IoLibraryOutline
+          style={styles.library}
+        />
+        Library
+      </div>
     </div>
   )
 }
@@ -31,7 +41,7 @@ const styles = {
     position: "absolute",
     bottom: 0,
     display: "inline-flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     borderRadius: "5px",
   },
   link: {
@@ -40,17 +50,22 @@ const styles = {
   },
   home: {
     fontSize: "25px",
-    marginRight: 90,
-    marginTop: 10
+    marginTop: 7
   },
   library: {
     fontSize: "25px",
-    marginTop: 10,
-    marginLeft: 90
+    marginTop: 7
   },
   search: {
     fontSize: "25px",
-    marginTop: 10
+    marginTop: 7
+  },
+  nameBox: {
+    display: "flex",
+    flexDirection: "column",
+    fontSize: 11,
+    marginLeft: 50,
+    marginRight: 50
   }
 }
 
