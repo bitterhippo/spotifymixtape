@@ -13,8 +13,8 @@ const styles = {
   container : {
     width: '75px',
     textAlign: "center",
-    marginLeft: '100',
-    marginTop: 15
+    marginLeft: 5,
+    marginTop: 30
   },
   text :{
     color: 'green',
