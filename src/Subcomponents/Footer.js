@@ -50,15 +50,16 @@ const styles = {
   },
   home: {
     fontSize: "25px",
-    marginTop: 7
+    marginTop: 5
   },
   library: {
     fontSize: "25px",
-    marginTop: 7
+    marginTop: 5,
+    marginLeft: 3
   },
   search: {
     fontSize: "25px",
-    marginTop: 7
+    marginTop: 5
   },
   nameBox: {
     display: "flex",
