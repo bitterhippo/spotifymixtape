@@ -1,12 +1,7 @@
-@font-face {
-  font-family: 'MyFont';
-  src: local('MyFont'), url(//db.onlinewebfonts.com/c/4504d77ae8b1517de38b53c4c4ec6461?family=Circular+Sp+UI+v3+T+Bold) format('woff');
-}
 
 * { 
   margin:0; 
-  padding:0;
-  font-family: 'MyFont'; 
+  padding:0 
 }
 
 nav {

@@ -35,12 +35,11 @@ const styles = {
     flexDirection: "inline-flex",
     gap: 50,
     position: "absolute",
-    bottom: "15%",
+    bottom: "20%",
     left: "15%"
   },
   tapeLink: {
     display: "flex",
-    marginTop: 25,
     justifyContent: "center",
     backgroundColor: "white",
     height: 40,
@@ -48,7 +47,7 @@ const styles = {
     borderRadius: 30,
     marginLeft: 90,
     position: "absolute",
-    bottom: "8%"
+    bottom: "11%"
   },
   tapeLinkText: {
     textAlign: "center",
@@ -59,6 +58,5 @@ const styles = {
 
   }
 }
-
 
 export default Newtapes;

@@ -46,7 +46,8 @@ const styles = {
   header: {
     marginTop: 20,
     fontWeight: 16,
-    marginLeft: 25
+    marginLeft: 25,
+    fontFamily: "Times New Roman"
   },
   tabBox: {
     display: "flex",

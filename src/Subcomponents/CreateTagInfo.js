@@ -12,7 +12,6 @@ function CreateTagInfo() {
         <h1>New Mixtape</h1>
         <p>Pick tags based on genre, mood, occasion and more and let Spotify handle the heavy lifting.</p>
         <br></br>
-        <br></br>
         <h3>Get started by adding tags</h3>
     </div>
   )
