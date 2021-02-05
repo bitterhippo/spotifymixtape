@@ -4,6 +4,7 @@ import Footer from '../Subcomponents/Footer';
 import StatusBar from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import Tagged from '../Subcomponents/Tagged';
+import PlayingFrom from '../Subcomponents/PlayingFrom';
 
 const SongView = props => {
 
@@ -15,6 +16,7 @@ const SongView = props => {
     <div id="viewscreen">
       <Footer />
       <StatusBar />
+      <PlayingFrom />
       <NoteBox props={{img: "rave.jpg"}}/>
       <div style={styles.playerBox}>
         <div style={styles.songTitle}>
@@ -44,7 +46,8 @@ const styles = {
     top: "50%",
     backgroundColor: "",
     width: "100%",
-    marginLeft: 5
+    marginLeft: 5,
+    marginTop: 15
   },
   player : {
     marginLeft: 15,
@@ -56,7 +59,7 @@ const styles = {
     marginLeft: 15
   },
   songTagsContainer: {
-    marginTop: 60,
+    marginTop: 30,
     fontSize: 20,
     marginLeft: 30
   },
