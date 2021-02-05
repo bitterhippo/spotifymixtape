@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+import '../index.css';
 
 
 
@@ -19,8 +19,9 @@ function CreateTagInfo() {
 
 const styles = {
   infoBox : {
+    fontFamily: 'MyFont',
     position: "absolute",
-    marginTop: "300px",
+    marginTop: "290px",
     marginLeft: "35px",
     width: "80%",
     height: "20%",

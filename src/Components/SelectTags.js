@@ -49,7 +49,7 @@ class SelectTags extends React.Component {
           <h2 style={{ textAlign: "center" }}>Select Tags</h2>
           <h3>Tags : </h3>
           <div style={styles.tagged}>
-            {this.state.selected < 1 ? <Untagged /> : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]} />
+            {this.state.selected < 1 ? "" : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]} />
             ))}
           </div>
           <div style={styles.selectorBox}>
@@ -113,14 +113,14 @@ const styles = {
     gap: 20,
     marginLeft: "18%",
     marginBottom: 10,
-    marginTop: 65,
+    marginTop: 90,
     textDecoration: "green"
   },
   link: {
     textDecoration: "none",
     color: "white"
   },
-  selected : {
+  selected: {
     textDecoration: "underline solid white 2px"
   }
 }
