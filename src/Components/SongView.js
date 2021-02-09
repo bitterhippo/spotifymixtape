@@ -10,7 +10,7 @@ const SongView = props => {
 
   const data = props.location.state
 
-  console.log(data)
+  console.log(props.location.state.tags[0][0])
 
   return (
     <div id="viewscreen">
@@ -30,7 +30,9 @@ const SongView = props => {
         <div style={styles.songTagsContainer}>
           <b>Tags</b>
           <div style={styles.songTags}>
-            {data.tags.map((x, y) => <Tagged key={y} props={[x]} />)}
+            {data.tags.map((x, y) => 
+            <Tagged key={y} props={[x]} 
+            />)}
           </div>
         </div>
       </div>

@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 const SongBox = props => {
 
-  console.log(props)
-
   return (
     <div style={styles.row}>
       <div>
@@ -17,7 +15,7 @@ const SongBox = props => {
             to={{
               pathname: "/SongView",
               state: {
-                tags: [props.props.tags],
+                tags: props.props.tags,
                 song: props.props.songName,
                 artist: props.props.artist,
                 img: 'insert img here'

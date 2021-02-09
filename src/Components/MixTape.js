@@ -6,6 +6,7 @@ import NoteBox from '../Subcomponents/NoteBox';
 import SongBox from '../Subcomponents/SongBox';
 import Player from "../Subcomponents/Player";
 import { Link } from "react-router-dom";
+import { IoHeartOutline, IoEllipsisHorizontalSharp } from 'react-icons/io5';
 
 
 class MixTape extends React.Component {
@@ -22,7 +23,7 @@ class MixTape extends React.Component {
         <div id='viewscreen'>
           <StatusBar />
           <Footer />
-          <NoteBox props={{img: "musicstore.jpg"}}/>
+          <NoteBox props={{ img: "musicstore.jpg" }} />
           <div style={styles.infoBox}>
             <div style={styles.tapeName}>
               Mixtape #1
@@ -40,30 +41,26 @@ class MixTape extends React.Component {
           <Player />
           <div style={styles.songList}>
             <div style={styles.songListBox}>
-              <SongBox props={{ 
-                img: 'Funk.jpeg', 
-                songName: 'Waiting 4 Eva', 
-                artist: 'Ruby f00 Krew', 
-                tags: [...this.props.location.state.testValue] }} 
-                />
-              <div style={styles.songListBoxLink}>
-                View
+              <SongBox props={{
+                img: 'Funk.jpeg',
+                songName: 'Waiting 4 Eva',
+                artist: 'Ruby f00 Krew',
+                tags: [...this.props.location.state.testValue]
+              }}
+              />
+              <div style={styles.songListBoxIcons}>
+                <IoHeartOutline style={{fontSize: 19}}/><IoEllipsisHorizontalSharp />
               </div>
             </div>
             <div style={styles.songListBox}>
-              <SongBox props={{ img: 'Punk.jpeg', songName: `It Took Too Long`, artist: 'Da Snow Blowah' }} />
-              <div style={styles.songListBoxLink}>
-                <Link
-                  style={styles.songListBoxLink}
-                  to={{
-                    pathname: "/SongView",
-                    state: {
-                      tags: [...this.props.location.state.testValue],
-                      song: 'It Took Too Long', 
-                      artist: 'Da Snow Blowah', 
-                      img: 'insert img here'
-                    }
-                  }}>View</Link>
+              <SongBox props={{
+                img: 'Punk.jpeg',
+                songName: `It Took Too Long`,
+                artist: 'Da Snow Blowah',
+                tags: [...this.props.location.state.testValue]
+              }} />
+              <div style={styles.songListBoxIcons}>
+                <IoHeartOutline style={{fontSize: 19}}/><IoEllipsisHorizontalSharp />
               </div>
             </div>
           </div>
@@ -109,6 +106,11 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
   },
+  songListBoxIcons: {
+    display: 'inline-flex',
+    marginLeft: 25,
+    gap: 15
+  }
 }
 
 export default MixTape;

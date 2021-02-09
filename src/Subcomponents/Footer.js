@@ -1,11 +1,9 @@
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import { IoHomeOutline, IoSearchOutline, IoLibraryOutline } from "react-icons/io5";
+import { IoHomeOutline, IoSearchOutline, IoLibraryOutline  } from "react-icons/io5";
 
 const Footer = props => {
-
-  console.log(props.props)
 
   return (
     <div style={styles.footer}>
