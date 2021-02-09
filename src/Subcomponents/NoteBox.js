@@ -16,11 +16,11 @@ const styles = {
     marginLeft: `60px`,
     width: 250,
     height: 250,
-    borderRadius: "5px"
   },
   img: {
     height: "100%",
     width: "100%",
+    borderRadius: 10
   }
 }
 

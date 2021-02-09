@@ -23,10 +23,11 @@ const styles = {
   statusBar: {
     display: "flex",
     flexDirection: "inline-flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    backgroundColor: "rgb (153, 153, 153)"
   },
   timer: {
-    marginLeft: 15,
+    marginLeft: 40,
     marginTop: 5
   },
   items: {

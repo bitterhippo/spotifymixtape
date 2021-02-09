@@ -6,6 +6,7 @@ import DB from '../DB';
 import TextPic from '../Subcomponents/TextPic';
 import Tagged from '../Subcomponents/Tagged';
 import { Link } from 'react-router-dom';
+import BackArrow from '../Subcomponents/BackArrow';
 
 class SelectTags extends React.Component {
   constructor(props) {
@@ -44,9 +45,10 @@ class SelectTags extends React.Component {
       <div>
         <div id='viewscreen'>
           <StatusBar />
+          <BackArrow />
           <Footer />
           <h2 style={{ textAlign: "center" }}>Select Tags</h2>
-          <h3>Tags : </h3>
+          <h3 style={{marginLeft: 30, marginTop: 15}}>Tags : </h3>
           <div style={styles.tagged}>
             {this.state.selected < 1 ? "" : this.state.selected.map(((x, y) => <Tagged key={y} props={[x]} />
             ))}
@@ -100,7 +102,7 @@ const styles = {
   },
   counterContainer: {
     position: "absolute",
-    top: "80%",
+    top: "83%",
     backgroundColor: "green",
     borderRadius: '25px',
     padding: 10,

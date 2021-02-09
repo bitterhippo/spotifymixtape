@@ -20,6 +20,7 @@ const styles = {
     color: 'green',
     borderStyle: "solid",
     borderRadius: '25px',
+    borderWidth: 2,
     width: "100%",
   }
 }

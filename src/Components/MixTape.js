@@ -6,6 +6,7 @@ import NoteBox from '../Subcomponents/NoteBox';
 import SongBox from '../Subcomponents/SongBox';
 import Player from "../Subcomponents/Player";
 import { IoHeartOutline, IoEllipsisHorizontalSharp } from 'react-icons/io5';
+import BackArrow from '../Subcomponents/BackArrow';
 
 
 class MixTape extends React.Component {
@@ -20,6 +21,7 @@ class MixTape extends React.Component {
       <div>
         <div id='viewscreen'>
           <StatusBar />
+          <BackArrow />
           <Footer />
           <NoteBox props={{ img: "musicstore.jpg" }} />
           <div style={styles.infoBox}>
@@ -84,7 +86,8 @@ const styles = {
     color: "rgb(130,130,130)",
     borderStyle: "solid",
     borderRadius: '25px',
-    width: "55%"
+    width: "55%",
+    borderWidth: 2
   },
   text: {
     marginTop: 10,

@@ -47,7 +47,8 @@ const styles = {
     marginTop: 20,
     fontWeight: 16,
     marginLeft: 25,
-    fontFamily: "Circular Sp UI v3 T Book"
+    fontFamily: "Circular Sp UI v3 T Book",
+    fontWeight: "bold"
   },
   tabBox: {
     display: "flex",

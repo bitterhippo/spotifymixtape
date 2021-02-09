@@ -21,7 +21,8 @@ const styles = {
     marginTop: 5
   },
   img: {
-    height: 110
+    height: 110,
+    borderRadius: 10
   }
 }
 

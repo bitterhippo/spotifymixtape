@@ -5,6 +5,7 @@ import StatusBar from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import Tagged from '../Subcomponents/Tagged';
 import PlayingFrom from '../Subcomponents/PlayingFrom';
+import BackArrow from '../Subcomponents/BackArrow';
 
 const SongView = props => {
 
