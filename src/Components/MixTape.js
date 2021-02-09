@@ -40,19 +40,14 @@ class MixTape extends React.Component {
           <Player />
           <div style={styles.songList}>
             <div style={styles.songListBox}>
-              <SongBox props={{ img: 'Funk.jpeg', songName: 'Waiting 4 Eva', artist: 'Ruby f00 Krew' }} />
+              <SongBox props={{ 
+                img: 'Funk.jpeg', 
+                songName: 'Waiting 4 Eva', 
+                artist: 'Ruby f00 Krew', 
+                tags: [...this.props.location.state.testValue] }} 
+                />
               <div style={styles.songListBoxLink}>
-                <Link
-                  style={styles.songListBoxLink}
-                  to={{
-                    pathname: "/SongView",
-                    state: {
-                      tags: [...this.props.location.state.testValue],
-                      song: 'Waiting 4 Eva', 
-                      artist: 'Ruby f00 Krew', 
-                      img: 'insert img here'
-                    }
-                  }}>View</Link>
+                View
               </div>
             </div>
             <div style={styles.songListBox}>

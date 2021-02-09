@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+import { Link } from 'react-router-dom';
 
 const SongBox = props => {
 
@@ -10,7 +10,8 @@ const SongBox = props => {
         <img alt="" src={props.props.img} style={styles.img}/>
       </div>
       <div style={styles.text}>
-        <span style={styles.songName}>{props.props.songName} <br></br></span>
+        <span style={styles.songName}>
+          {props.props.songName} <br></br></span>
         <span style={styles.artist}>{props.props.artist}</span>
       </div>
     </div>

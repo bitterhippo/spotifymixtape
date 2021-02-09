@@ -59,7 +59,7 @@ const styles = {
   },
   search: {
     fontSize: "25px",
-    marginTop: 5
+    marginTop: 6
   },
   nameBox: {
     display: "flex",
