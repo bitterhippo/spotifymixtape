@@ -16,7 +16,6 @@ class MixTape extends React.Component {
 
 
   render() {
-    console.log(this.props.location)
     return (
       <div>
         <div id='viewscreen'>
