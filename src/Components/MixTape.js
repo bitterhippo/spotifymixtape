@@ -109,11 +109,6 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
   },
-  songListBoxLink: {
-    textDecoration: "none",
-    marginLeft: 15,
-    color: "white"
-  }
 }
 
 export default MixTape;
