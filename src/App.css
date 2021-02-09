@@ -1,8 +1,11 @@
-@font-face {font-family: "Circular Sp UI v3 T Book"; src: url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.eot") }
+@import url(//db.onlinewebfonts.com/c/12edea040c87dd91d377e1f1382f43c2?family=Circular+Sp+UI+v3+T+Book);
+
+@font-face {font-family: "Circular Sp UI v3 T Book"; src: url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.eot"); src: url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/12edea040c87dd91d377e1f1382f43c2.svg#Circular Sp UI v3 T Book") format("svg"); }
 
 * { 
   margin:0; 
-  padding:0 
+  padding:0;
+  font-family: 'Circular Sp UI v3 T Book';
 }
 
 nav {

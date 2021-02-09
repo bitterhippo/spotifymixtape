@@ -22,7 +22,7 @@ const Viewscreen = props => {
         />)}
       </div>
       <div style={styles.message}>
-        <h2>Your Mixtape</h2>
+        <h2 style={styles.test}>Your Mixtape</h2>
         <p>You bring the magic, we'll do the heavy lifting.</p>
         <div style={styles.tapeLink}>
           <Link 
@@ -95,7 +95,7 @@ const styles = {
   },
   headerTwo: {
     marginLeft: 25
-  }
+  },
 }
 
 export default Viewscreen;
