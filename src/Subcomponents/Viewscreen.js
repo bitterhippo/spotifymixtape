@@ -60,7 +60,7 @@ const styles = {
   },
   message: {
     marginTop: 25,
-    marginLeft: 25
+    marginLeft: 25,
   },
   playedBox: {
     display: "flex",

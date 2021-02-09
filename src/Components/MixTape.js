@@ -5,7 +5,6 @@ import Footer from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import SongBox from '../Subcomponents/SongBox';
 import Player from "../Subcomponents/Player";
-import { Link } from "react-router-dom";
 import { IoHeartOutline, IoEllipsisHorizontalSharp } from 'react-icons/io5';
 
 
