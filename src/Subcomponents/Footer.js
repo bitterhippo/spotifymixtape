@@ -52,18 +52,18 @@ const styles = {
   },
   library: {
     fontSize: "25px",
-    marginTop: 5,
+    marginTop: 7,
     marginLeft: 3
   },
   search: {
     fontSize: "25px",
-    marginTop: 6
+    marginTop: 7
   },
   nameBox: {
     display: "flex",
     flexDirection: "column",
-    fontSize: 11,
-    marginLeft: 50,
+    fontSize: 10,
+    marginLeft: 47,
     marginRight: 50
   }
 }

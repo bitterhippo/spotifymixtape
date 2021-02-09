@@ -110,7 +110,7 @@ const styles = {
     display: "inline-flex",
     textAlign: "center",
     gap: 20,
-    marginLeft: "18%",
+    marginLeft: "15%",
     marginBottom: 10,
     marginTop: 90,
     textDecoration: "green"

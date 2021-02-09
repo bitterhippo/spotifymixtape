@@ -35,7 +35,7 @@ const styles = {
     flexDirection: "inline-flex",
     gap: 50,
     position: "absolute",
-    bottom: "20%",
+    bottom: "18%",
     left: "15%"
   },
   tapeLink: {

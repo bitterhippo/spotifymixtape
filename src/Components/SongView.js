@@ -56,18 +56,18 @@ const styles = {
   songTitle: {
     fontSize: 20,
     fontWeight: "bold",
-    marginLeft: 15
+    marginLeft: 10
   },
   songTagsContainer: {
     marginTop: 30,
     fontSize: 20,
-    marginLeft: 30
+    marginLeft: 15
   },
   songTags: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "left",
-    gap: 15,
+    gap: 5,
     fontSize: 16,
   },
   artistName : {

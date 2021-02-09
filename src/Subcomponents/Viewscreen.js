@@ -91,7 +91,7 @@ const styles = {
     color: "white"
   },
   played: {
-    marginTop: 40
+    marginTop: 20
   },
   headerTwo: {
     marginLeft: 25
