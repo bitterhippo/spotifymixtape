@@ -55,7 +55,6 @@ const styles = {
     marginTop: 10,
     textDecoration: "none",
     color: "black",
-
   }
 }
 

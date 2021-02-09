@@ -10,8 +10,6 @@ const SongView = props => {
 
   const data = props.location.state
 
-  console.log(props.location.state.tags[0][0])
-
   return (
     <div id="viewscreen">
       <Footer />
