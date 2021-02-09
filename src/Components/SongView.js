@@ -74,7 +74,7 @@ const styles = {
   artistName : {
     color: "grey",
     fontSize: 14,
-    marginLeft: 15
+    marginLeft: 10
   }
 }
 
