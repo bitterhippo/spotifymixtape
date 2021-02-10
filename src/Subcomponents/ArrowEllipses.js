@@ -4,8 +4,8 @@ import { IoArrowBackOutline, IoEllipsisHorizontalSharp } from "react-icons/io5";
 const BackArrowEllipses = props => {
   return (
     <div style={styles.container}>
-      <IoArrowBackOutline style={{fontSize: 300}} />
-      <IoEllipsisHorizontalSharp />
+      <IoArrowBackOutline style={{fontSize: 20, marginLeft: 15}} />
+      <IoEllipsisHorizontalSharp style={{fontSize: 20, marginRight: 15}}/>
     </div>
   )
 }
@@ -13,7 +13,11 @@ const BackArrowEllipses = props => {
 const styles = {
   container: {
     width: '100%',
-    marginLeft: 100
+    display: 'flex',
+    flexDirection: 'inline-flex',
+    justifyContent: 'space-between',
+    position: 'absolute',
+    top: '4%'
   }
 }
 
