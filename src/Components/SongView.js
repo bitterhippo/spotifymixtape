@@ -5,6 +5,7 @@ import StatusBar from '../Subcomponents/StatusBar';
 import NoteBox from '../Subcomponents/NoteBox';
 import Tagged from '../Subcomponents/Tagged';
 import PlayingFrom from '../Subcomponents/PlayingFrom';
+import MusicPlayer from '../Subcomponents/MusicPlayer';
 
 const SongView = props => {
 
@@ -20,11 +21,8 @@ const SongView = props => {
         <div style={styles.songTitle}>
           <span style={styles.songTitle}>{data.song} <br></br></span>
           <span style={styles.artistName}>{data.artist}</span>
-          <audio controls style={styles.player}>
-            <source type="audio/ogg" />
-            <source type="audio/mpeg" />
-          </audio>
         </div>
+        <MusicPlayer />
         <div style={styles.songTagsContainer}>
           <b>Tags</b>
           <div style={styles.songTags}>
