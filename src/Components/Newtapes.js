@@ -6,12 +6,14 @@ import NoteBox from '../Subcomponents/NoteBox';
 import CreateTagInfo from '../Subcomponents/CreateTagInfo';
 import SongPic from "../Subcomponents/SongPic";
 import { Link } from "react-router-dom";
+import BackArrow from '../Subcomponents/BackArrow';
 
 function Newtapes() {
   return (
     <div>
       <div id='viewscreen'>
         <StatusBar />
+        <BackArrow />
         <NoteBox props={{ img: "rave.jpg" }} />
         <CreateTagInfo />
         <div style={styles.imgBox}>
