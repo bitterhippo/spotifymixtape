@@ -31,9 +31,9 @@ nav {
 
 #viewscreen{
   position: relative;
-  height: 700px;
+  height: 725px;
   width: 375px;
-  background-image: radial-gradient(farthest-corner at 20px 50px,
+  background-image: radial-gradient(farthest-corner at 10px 50px,
   rgb(22, 11, 48) 15%, rgb(1, 0, 3) 100%);
   background-color: "black";
   color: white;
