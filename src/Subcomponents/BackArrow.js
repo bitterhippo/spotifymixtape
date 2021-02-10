@@ -1,10 +1,10 @@
 import React from "react";
-import { IoArrowBackOutline, IoEllipsisHorizontalSharp } from "react-icons/io5";
+import { IoArrowBackOutline } from "react-icons/io5";
 
 const BackArrow = props => {
   return (
     <div style={styles.container}>
-      <IoArrowBackOutline style={{fontSize: 20}} />
+      <IoArrowBackOutline style={{ fontSize: 20 }} />
     </div>
   )
 }
