@@ -92,11 +92,12 @@ const styles = {
     display: "flex",
     flexDirection: 'row',
     justifyContent: 'right',
+    flexWrap: 'wrap',
     gap: '0px 10px',
     position: "absolute",
-    height: 100,
-    marginLeft: 15,
-    marginTop: 30
+    minHeight: '5px',
+    marginLeft: 10,
+    marginTop: 15,
   },
   counter: {
     textAlign: "center",

@@ -1,5 +1,5 @@
 const Data = {
-  Genre : [
+  Genre: [
     {
       name: `R&B`,
       img: `RnB.jpg`,
@@ -31,7 +31,7 @@ const Data = {
       tags: ``
     }
   ],
-  Mood : [
+  Mood: [
     {
       name: `Happy`,
       img: `RnB.jpg`,
@@ -63,7 +63,7 @@ const Data = {
       tags: ``
     }
   ],
-  Activity : [
+  Activity: [
     {
       name: `Party`,
       img: `RnB.jpg`,
@@ -95,19 +95,19 @@ const Data = {
       tags: ``
     }
   ],
-  Occasion : [
+  Occasion: [
     {
       name: `Wedding`,
       img: `RnB.jpg`,
       tags: ``
     },
     {
-      name: `Outdoor Party`,
+      name: `Party`,
       img: `Country.jpeg`,
       tags: ``
     },
     {
-      name: `Fighting Demons`,
+      name: `Fighting`,
       img: `Rock.jpg`,
       tags: ``
     },
@@ -117,12 +117,12 @@ const Data = {
       tags: ``
     },
     {
-      name: `Building a house`,
+      name: `Building`,
       img: `Pop.jpg`,
       tags: ``
     },
     {
-      name: `Riding a boat`,
+      name: `Boating`,
       img: `Rap.jpg`,
       tags: ``
     }

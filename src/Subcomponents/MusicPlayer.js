@@ -22,10 +22,9 @@ const styles = {
   controls: {
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: 15,
+    marginTop: 30,
     width: "88%",
     marginLeft: 19,
-    marginTop: 30,
     borderTop: 'solid white'
   },
   dial: {
