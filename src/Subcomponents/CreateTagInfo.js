@@ -10,9 +10,9 @@ function CreateTagInfo() {
   return (
       <div style={styles.infoBox}>
         <h1>New Mixtape</h1>
-        <p>Pick tags based on genre, mood, occasion and more and let Spotify handle the heavy lifting.</p>
+        <p style={styles.started}>Pick tags based on genre, mood, occasion and more and let Spotify handle the heavy lifting.</p>
         <br></br>
-        <h3>Get started by adding tags</h3>
+        <h1 style={styles.started}>Get started by adding tags</h1>
     </div>
   )
 }
@@ -26,6 +26,9 @@ const styles = {
     width: "80%",
     height: "20%",
     textAlign: "center"
+  },
+  started: {
+    fontSize: 16
   }
 }
 
