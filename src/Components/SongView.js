@@ -6,6 +6,7 @@ import NoteBox from '../Subcomponents/NoteBox';
 import Tagged from '../Subcomponents/Tagged';
 import PlayingFrom from '../Subcomponents/PlayingFrom';
 import MusicPlayer from '../Subcomponents/MusicPlayer';
+import SongDuration from '../Subcomponents/SongDuration';
 
 const SongView = props => {
 
@@ -16,6 +17,7 @@ const SongView = props => {
       <Footer />
       <StatusBar />
       <PlayingFrom />
+      <SongDuration />
       <NoteBox props={{img: "rave.jpg"}}/>
       <div style={styles.playerBox}>
         <div style={styles.songTitle}>
