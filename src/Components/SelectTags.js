@@ -89,10 +89,14 @@ class SelectTags extends React.Component {
 
 const styles = {
   tagged: {
-    display: "inline-flex",
-    flexWrap: "center",
-    gap: "10px",
-    position: "absolute"
+    display: "flex",
+    flexDirection: 'row',
+    justifyContent: 'right',
+    gap: '0px 10px',
+    position: "absolute",
+    height: 100,
+    marginLeft: 15,
+    marginTop: 30
   },
   counter: {
     textAlign: "center",

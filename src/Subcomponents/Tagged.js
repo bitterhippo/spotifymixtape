@@ -12,9 +12,7 @@ const Tagged = props => {
 const styles = {
   container : {
     width: '75px',
-    textAlign: "center",
-    marginLeft: 5,
-    marginTop: 30
+    textAlign: "center"
   },
   text :{
     color: 'green',

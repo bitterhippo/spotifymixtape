@@ -64,11 +64,13 @@ const styles = {
     marginLeft: 15
   },
   songTags: {
+    marginLeft: -30,
     display: "flex",
     flexDirection: "row",
-    justifyContent: "left",
-    gap: 5,
+    justifyContent: "center",
+    gap: 10,
     fontSize: 16,
+    marginTop: 15,
   },
   artistName : {
     color: "grey",
