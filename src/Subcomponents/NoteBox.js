@@ -4,7 +4,7 @@ import '../App.css';
 const NoteBox = props => {
   return (
     <div style={styles.noteBox}>
-      <img style={styles.img} src={props.props.img} />
+      <img alt={styles.img} style={styles.img} src={props.props.img} />
     </div>
   )
 }

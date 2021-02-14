@@ -3,7 +3,7 @@ import React from "react";
 const SongPic = props => {
   return (
     <div style={styles.songBox}>
-      <img style={styles.img} src={props.props.img}/>
+      <img alt={styles.img} style={styles.img} src={props.props.img}/>
       <p style={styles.text}>{props.props.text}</p>
     </div>
   )
