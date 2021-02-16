@@ -19,11 +19,16 @@ class SelectTags extends React.Component {
   }
 
   handleClick(e) {
-    console.log(e.target.dataset.value)
-    console.log(this.state.data)
+    if (e.target.dataset.value === undefined) {
+      this.setState({
+        data: this.state.data
+      })
+    }
+    else {
     this.setState({
       data: e.target.dataset.value,
     })
+  }
   }
 
   getElement(e) {
@@ -66,9 +71,9 @@ class SelectTags extends React.Component {
             </div>)}
           </div>
           <div id="selector-container">
-            {this.state.data !== undefined ? DB[this.state.data].map((current, int) => <div key={int}>
+            {DB[this.state.data].map((current, int) => <div key={int}>
               <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`, `${current.name}`]} />
-            </div>) : console.log('Slower update')}
+            </div>)}
           </div>
           <div style={styles.counter}>
             <div style={styles.counterContainer}>
