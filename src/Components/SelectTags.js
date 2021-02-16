@@ -11,7 +11,7 @@ import BackArrow from '../Subcomponents/BackArrow';
 class SelectTags extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: "Genre", selected: [] }
+    this.state = { data: "Genre", selected: []}
 
 
     this.handleClick = this.handleClick.bind(this);
@@ -20,7 +20,7 @@ class SelectTags extends React.Component {
 
   handleClick(e) {
     this.setState({
-      data: e.target.dataset.value
+      data: e.target.dataset.value,
     })
   }
 
@@ -64,9 +64,9 @@ class SelectTags extends React.Component {
             </div>)}
           </div>
           <div id="selector-container">
-            {DB[this.state.data].map((current, int) => <div key={int}>
+            {this.state.data !== undefined ? DB[this.state.data].map((current, int) => <div key={int}>
               <TextPic dataset={current.name} onClick={this.getElement} props={[`${current.img}`, `${current.name}`]} />
-            </div>)}
+            </div>) : console.log('Slower update')}
           </div>
           <div style={styles.counter}>
             <div style={styles.counterContainer}>
