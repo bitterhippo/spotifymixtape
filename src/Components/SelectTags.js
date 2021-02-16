@@ -19,6 +19,8 @@ class SelectTags extends React.Component {
   }
 
   handleClick(e) {
+    console.log(e.target.dataset.value)
+    console.log(this.state.data)
     this.setState({
       data: e.target.dataset.value,
     })
