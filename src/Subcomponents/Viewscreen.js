@@ -9,7 +9,7 @@ import SongPic from './SongPic';
 
 const Viewscreen = props => {
 
-  const songInfo = [["Rap.jpg", "Living Gud"], ["Rock.jpg", "Tacco Truck"], ["Soul.jpeg", "Sweating This Sweater"], ["note.png", "Licorice Alice"], ["Soul.jpeg", "Exciter"], ["RnB.jpg", "Strolling On The Moon"]]
+  const songInfo = [["LivingGud.jpg", "Living Gud"], ["TacoTruck.jpg", "Taco Truck"], ["SweatingSweater.jpg", "Sweating This Sweater"], ["LicoriceAlice.jpg", "Licorice Alice"], ["Excited.jpg", "Exciter"], ["StrollingMoon.jpg", "Strolling On The Moon"]]
 
   return (
     <div id='viewscreen'>
@@ -33,9 +33,9 @@ const Viewscreen = props => {
       <div style={styles.played}>
         <h2 style={styles.headerTwo}>Recently Played</h2>
         <div style={styles.songPics}>
-          <SongPic props={{ img: 'Rock.jpeg', text: 'Birbs N Bros' }} />
-          <SongPic props={{ img: 'rave.jpg', text: 'Lost on the Dock' }} />
-          <SongPic props={{ img: 'Punk.jpeg', text: 'Lit 4 Lyfe' }} />
+          <SongPic props={{ img: 'BirbsNBros.jpg', text: 'Birbs N Bros' }} />
+          <SongPic props={{ img: 'LostDock.jpg', text: 'Lost on the Dock' }} />
+          <SongPic props={{ img: 'Lit4Lyfe.jpg', text: 'Lit 4 Lyfe' }} />
         </div>
       </div>
     </div>
