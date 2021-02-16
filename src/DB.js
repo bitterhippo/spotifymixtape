@@ -34,71 +34,71 @@ const Data = {
   Mood: [
     {
       name: `Happy`,
-      img: `RnB.jpg`,
+      img: `Happy.jpg`,
       tags: ``
     },
     {
       name: `Sad`,
-      img: `Country.jpeg`,
+      img: `Sad.jpg`,
       tags: ``
     },
     {
       name: `Busy`,
-      img: `Rock.jpg`,
+      img: `Busy.jpg`,
       tags: ``
     },
     {
       name: `Focused`,
-      img: `Classical.jpeg`,
+      img: `Focused.jpg`,
       tags: ``
     },
     {
       name: `Stressed`,
-      img: `Pop.jpg`,
+      img: `Stressed.jpg`,
       tags: ``
     },
     {
       name: `Relaxed`,
-      img: `Rap.jpg`,
+      img: `Relaxed.jpg`,
       tags: ``
     }
   ],
   Activity: [
     {
       name: `Party`,
-      img: `RnB.jpg`,
+      img: `Partying.jpg`,
       tags: ``
     },
     {
       name: `Studying`,
-      img: `Country.jpeg`,
+      img: `Studying.jpg`,
       tags: ``
     },
     {
       name: `Chores`,
-      img: `Rock.jpg`,
+      img: `Chores.jpg`,
       tags: ``
     },
     {
       name: `Driving`,
-      img: `Classical.jpeg`,
+      img: `Driving.jpg`,
       tags: ``
     },
     {
       name: `Exercise`,
-      img: `Pop.jpg`,
+      img: `Exercise.jpg`,
       tags: ``
     },
     {
       name: `Gaming`,
-      img: `Rap.jpg`,
+      img: `Gaming.jpg`,
       tags: ``
     }
   ],
   Occasion: [
     {
       name: `Wedding`,
-      img: `RnB.jpg`,
+      img: `Wedding.jpg`,
       tags: ``
     },
     {
