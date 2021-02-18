@@ -1,6 +1,6 @@
-Spotify Mixtape
+# Spotify Mixtape
 
-# Description
+### Description
 
 The purpose of this web-app is provide a simulated user-flow for using meta-data tags to randomly generate mixtapes in Spotify.
 
@@ -9,7 +9,7 @@ Figma: https://app.zeplin.io/project/5f7f25317fbed4a7de228344/dashboard?sid=5f80
 
 
 
-# Installation
+### Installation
 
 ```
 git clone https://github.com/bitterhippo/spotifymixtape
