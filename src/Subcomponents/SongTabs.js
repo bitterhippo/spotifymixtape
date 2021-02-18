@@ -27,7 +27,7 @@ const styles = {
     borderRadius: 5
   },
   text: {
-    marginTop: 10,
+    marginTop: 15,
   },
   container: {
     display: "flex",

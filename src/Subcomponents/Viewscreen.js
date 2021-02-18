@@ -9,12 +9,12 @@ import SongPic from './SongPic';
 
 const Viewscreen = props => {
 
-  const songInfo = [["LivingGud.jpg", "Living Gud"], ["TacoTruck.jpg", "Taco Truck"], ["SweatingSweater.jpg", "Sweating This Sweater"], ["LicoriceAlice.jpg", "Licorice Alice"], ["Excited.jpg", "Exciter"], ["StrollingMoon.jpg", "Strolling On The Moon"]]
+  const songInfo = [["LivingGud.jpg", "Living Gud"], ["TacoTruck.jpg", "Taco Truck"], ["SweatingSweater.jpg", "Sweaty Fresh"], ["LicoriceAlice.jpg", "Licorice Alice"], ["Excited.jpg", "Exciter"], ["StrollingMoon.jpg", "Moon Stroll"]]
 
   return (
     <div id='viewscreen'>
       <StatusBar />
-      <h1 style={styles.header}>Good Evening!</h1>
+      <h1 style={styles.header}>Good Evening</h1>
       <Footer />
       <div style={styles.tabBox}>
         {songInfo.map((x, y) => <SongTabs key={y}
