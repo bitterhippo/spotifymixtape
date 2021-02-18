@@ -17,7 +17,7 @@ function Newtapes() {
         <NoteBox props={{ img: "rave.jpg" }} />
         <CreateTagInfo />
         <div style={styles.imgBox}>
-          <SongPic props={{ img: "pop.jpeg", text: "Pop" }} />
+          <SongPic props={{ img: "Pop.jpeg", text: "Pop" }} />
           <SongPic props={{ img: 'RnB.jpg', text: 'Rap' }} />
         </div>
         <div style={styles.tapeLink}>

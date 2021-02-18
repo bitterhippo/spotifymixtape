@@ -14,7 +14,7 @@ const Viewscreen = props => {
   return (
     <div id='viewscreen'>
       <StatusBar />
-      <h1 style={styles.header}>Good Evening</h1>
+      <h1 style={styles.header}>Good Evening!</h1>
       <Footer />
       <div style={styles.tabBox}>
         {songInfo.map((x, y) => <SongTabs key={y}
